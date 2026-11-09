@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Vector database
+chroma_db/
+
+# Generated files
+*.index
+
+# IDE
+.vscode/
