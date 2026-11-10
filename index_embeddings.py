@@ -5,7 +5,8 @@ from pathlib import Path
 from src.vectorstore.chroma_store import get_collection
 
 
-EMBEDDINGS_PATH = Path("extracted_text/embeddings.json")
+PROJECT_ROOT = Path(__file__).resolve().parent
+EMBEDDINGS_PATH = PROJECT_ROOT / "extracted_text" / "embeddings.json"
 
 
 def main():

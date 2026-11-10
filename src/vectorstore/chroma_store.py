@@ -4,7 +4,8 @@ from pathlib import Path
 
 
 # Location where ChromaDB will save its data
-CHROMA_PATH = Path("chroma_db")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+CHROMA_PATH = PROJECT_ROOT / "chroma_db"
 
 
 # Create a persistent ChromaDB client

@@ -10,7 +10,8 @@ from src.embeddings.gemini_embeddings import (
 )
 
 
-EMBEDDINGS_PATH = Path("extracted_text/embeddings.json")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+EMBEDDINGS_PATH = PROJECT_ROOT / "extracted_text" / "embeddings.json"
 
 
 def semantic_search(

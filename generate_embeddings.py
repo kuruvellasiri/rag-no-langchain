@@ -7,9 +7,10 @@ from src.embeddings.gemini_embeddings import (
 )
 
 
-CHUNKS_PATH = Path("extracted_text/chunks.json")
+PROJECT_ROOT = Path(__file__).resolve().parent
+CHUNKS_PATH = PROJECT_ROOT / "extracted_text" / "chunks.json"
 
-OUTPUT_PATH = Path("extracted_text/embeddings.json")
+OUTPUT_PATH = PROJECT_ROOT / "extracted_text" / "embeddings.json"
 
 
 def main():

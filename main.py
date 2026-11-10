@@ -2,16 +2,17 @@
 import json
 from pathlib import Path
 
-from src.ingestion.pdf_loader import load_pdf
+from src.ingestion.pdfplumber_loader import load_pdf_with_layout
 from src.ingestion.text_cleaner import clean_text
 from src.chunking.text_chunker import create_recursive_chunks
 
 
-PDF_PATH = Path("documents/machine_learning_pdf.pdf")
+PROJECT_ROOT = Path(__file__).resolve().parent
+PDF_PATH = PROJECT_ROOT / "documents" / "machine_learning_pdf.pdf"
 
-EXTRACTED_PATH = Path("extracted_text/document_text.txt")
+EXTRACTED_PATH = PROJECT_ROOT / "extracted_text" / "document_text.txt"
 
-CHUNKS_PATH = Path("extracted_text/chunks.json")
+CHUNKS_PATH = PROJECT_ROOT / "extracted_text" / "chunks.json"
 
 
 def main():
@@ -19,15 +20,13 @@ def main():
     # Step 1: Load PDF
     print("Loading PDF...")
 
-    documents = load_pdf(PDF_PATH)
+    documents = load_pdf_with_layout(PDF_PATH)
 
     print(f"Total pages loaded: {len(documents)}")
 
     # Step 2: Clean each page
     for document in documents:
-        document["page_content"] = clean_text(
-            document["page_content"]
-        )
+        document["page_content"] = clean_text(document["page_content"])
 
     # Step 3: Save extracted text
     complete_text = "\n\n".join(
