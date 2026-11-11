@@ -1,0 +1,467 @@
+--- PAGE 1 ---
+Image (page 1):
+Visible text: Defence Science and Technology Laboratory Machine Learning with Limited Data Future of AI for Defence Project Autonomy Programme
+
+--- PAGE 2 ---
+Defence Science and Technology Laboratory Machine Learning with Limited Data Future of AI for Defence Project Autonomy Programme
+
+--- PAGE 3 ---
+Foreword
+Machine learning offers Defence significant benefits, such as increasing the amount of data that can be analysed and reducing the load on human analysts. State-of-the-art approaches for machine learning, such as deep learning, can achieve high accuracy on a wide range of problems if sufficient training data is available.
+
+Whilst there are a large number of problems in Defence which could benefit from machine learning, for many of these, state-of-the-art machine learning models cannot be applied due to a lack of training data or because of the expense and time required to label sufficient examples.
+
+Machine learning is a data driven approach, with deep learning models usually requiring thousands of examples per class. In a limited data problem, there is not the large amount of data in the problem of interest needed to train a model, so we must use limited data approaches which generally utilise large labelled datasets with similar distributions or human knowledge to allow it to adapt rapidly to a small dataset. Whilst limited data machine learning approaches all improve over classical machine learning approaches for problems with a small amount of data, the best way to improve machine learning in limited data scenarios is to collect and label more data. In Defence there are a large number of problems where collection of further data is not possible or cost effective.
+
+This handbook looks to provide a guide to the landscape of machine learning techniques for limited data problems in 2020. It is designed to inform and guide machine learning practitioners on the limited data machine learning approaches currently possible. This captures some of the knowledge gained from Dstl research into low-shot learning carried out by the Future of AI for Defence project, part of the Autonomy programme.
+
+DSTL/PUB126061 © Crown Copyright 2020
+
+--- PAGE 4 ---
+Contents
+How much data is required? 002 Human ability to learn with limited data 003 Limited data problems 004 Selecting the approach 005
+
+Small amount of data, mostly unlabelled 006 Zero-shot learning 007
+
+Small amount of data, mostly labelled 008 Traditional machine learning 009 Meta-learning 010 - Few-shot learning 012 - Few-shot segmentation and object detection 014 - Meta-reinforcement learning 016 Knowledge enhanced machine learning 017 - Symbolic models 018 - Hierarchical learning 019
+
+Large amount of data, mostly unlabelled 020 Semi-supervised learning 021 Active learning 022 Unsupervised learning 023 Self-supervised learning 024
+
+Model refinement 025 Transfer learning 026 Uncertainty 027 Context injection 028 Data augmentation 029 Generated data 030
+
+Technology readiness levels 031
+
+References 032
+
+Further information 034
+
+Machine Learning with Limited Data 001
+
+--- PAGE 5 ---
+How much data is required? As a data driven approach, machine learning is heavily reliant on the availability of training data. The amount of labelled data required to train a machine learning model depends on the dataset and machine learning model, with complex datasets and deeper models typically requiring more data for training. Deep neural networks are currently the state-of-the-art machine learning approach for most problems. Deep neural networks allow far more generalisation than shallow neural networks and traditional machine learning approaches, and therefore achieve significantly better accuracy. The key challenge with applying deep learning When the amount of data is limited, to a problem is the large amount of data machine learning models tend to overfit. required to train deep learning models. This is when the model is over optimised to the training data. Overfitting will mean that the model will not be able to generalise to unseen examples, resulting Deep neural network i H n e p u o ri o st r i c p a e l r l f y o t r h m e a t n ra ce in . ing of deep neural networks requires thousands of examples Shallow neural network per class. When there are problems with tens or hundreds of examples per class, we should consider limited data Traditional machine learning learning approaches. The learning with limited data approaches Data considered in this guide look to use the power of deep neural networks on problems A comparison of the performance of traditional machine learning and neural where there is insufficient data to train networks when training data is limited. them classically. 002 Machine Learning with Limited Data Performance Data An example of the performance of a deep neural network when training data is limited. Performance
+
+--- PAGE 6 ---
+Human ability to learn with limited data Most humans are able to learn new objects when given only a couple of examples. There are a number of different ways that humans approach learning with limited data, such as using prior experience, comparing known and unlabelled examples and the ability to internalise semantic descriptions of the object of interest. The learning process of babies is of particular interest for machine learning as A limited data problem from the initially a machine learning model has no Anglo Saxon alphabet (Lake et al. 2015). When given a single example of an prior experience to exploit. If we can start unseen character (red), most humans to train machine models in a similar manner are able to find all other examples (blue). to how babies learn, machine learning models may be able to get closer to the human ability at learning with limited data. 6 Lessons from Babies (Smith et al. 2005): 1 Babies’ experience of the world is Many of the machine learning approaches profoundly multimodal. for limited data problems are inspired 2 B abies develop incrementally, and they by the human approach to these tasks. are not smart at the start. Data driven approaches look to use prior experience for low-shot problems, or learn 3 B abies live in a physical world, full of rich how to learn tasks. regularities that organise perception, action, and ultimately thought. Approaches to machine learning with 4 B abies explore – they move and act in limited data also look to leverage the highly variable and playful ways that human ability at recognising objects with are not goal-oriented and are seemingly only a few examples, through human random. labelling of examples or semantically 5 B abies act and learn in a social world describing objects to aid classification. in which more mature partners guide learning and add supporting structures to that learning. 6 B abies learn a language, a shared communicative system that is symbolic. Machine Learning with Limited Data 003
+
+Image (page 6):
+Visible text: TAARKAP T4|
+PNT Y/¢]0 WN
+NEYPT Y[4]+
+YPTRMAY P
+
+Jt RF KM EO
+
+--- PAGE 7 ---
+Limited data problems
+Machine learning with limited data can be required in all types of problem and dataset. Most of the academic research on learning with limited data has centred on image classification problems but many of these techniques should
+
+Types of problem
+Classification Determining the class of the example.
+
+Regression Approximating the value of a function.
+
+Object detection Localising and classifying objects.
+
+Event detection Detecting and classifying events in temporal data for example time series, audio or video.
+
+Segmentation Partitioning the pixels of an image into multiple segments representing classes.
+
+Reinforcement learning Teaching an agent to take the best actions to achieve a goal.
+
+004 Machine Learning with Limited Data apply directly to any machine learning problem or dataset.
+
+Some examples of problems and datasets that machine learning with limited data have been applied to are:
+
+problems in datasets
+Imagery Object detection, segmentation and classification of overhead or natural images.
+
+Time series Classification and event detection in single and multi-dimensional time series.
+
+Text Natural language processing, generation and question answering.
+
+Video Object detection and event detection.
+
+Audio Event detection and classification.
+
+Structured data Regression or classification for tabular data.
+
+--- PAGE 8 ---
+Selecting the approach
+Small amount of data
+
+Small amount of data, mostly unlabelled
+
+• Zero-shot learning Mostly ◼ Manual labelling unlabelled
+
+See Page 006
+Small amount of data, mostly labelled
+
+• Traditional machine Mostly learning labelled ◼ Meta-learning • Knowledge reasoning
+
+See Page 008
+Large amount of data
+
+Large amount of data, mostly unlabelled
+
+• Semi-supervised learning
+
+• Active learning
+
+• Unsupervised learning
+
+• Self-supervised learning
+
+See Page 020
+Large amount of data, mostly labelled
+
+• Deep learning
+
+Model refinement
+
+See Page 025
+Machine Learning with Limited Data 005
+
+--- PAGE 9 ---
+Small amount of data,
+
+mostly unlabelled
+For some Defence problems we may not have any labelled examples of the event or object of interest, but we may have unlabelled examples or information from other sources, such as text or semantic descriptions. This section considers approaches which leverage semantic descriptions of the event or object of interest to train the model.
+
+Whilst these approaches can be powerful for some problems, if there is unlabelled data available one would expect the best performance by manually labelling the data and considering the approaches for a small amount of data which is mostly labelled.
+
+Small amount of data, mostly unlabelled
+
+Is there data available which could be labelled?
+
+Yes No
+
+Manually label the data Zero-shot learning and apply techniques See Page 007 for small amount of data, mostly labelled See Page 008
+
+006 Machine Learning with Limited Data
+
+--- PAGE 10 ---
+Small amount of data, mostly unlabelled Zero-shot learning TRL: 2 Zero-shot learning looks to apply deep learning techniques to problems where there is no training data available. Instead zero-shot learning uses descriptions of concepts to train the model. Zero-shot learning approaches User-defined attributes – Attributes Vehicle defined by human experts or concept Tank ontology. Relative attributes – Measuring attributes 3D Gun Tracks Camouflage Metal relative to other examples. An image of a tank and corresponding Data-driven attributes – Augmenting example description. user-defined approaches by learning further attributes from data. Implementations – Many of the recent Concept ontology – Combining zero-shot learning models have code embeddings of data and ontologies, such available on GitHub. as WordNet, and leveraging the ontology Performance – State-of-the-art zero- structure to classify. shot learning approaches have achieved Semantic word embedding – Utilising over 80% accuracy on the Animals with a semantic word vector space learned Attributes dataset (Lampert et al. 2009) from linguistic knowledge bases. and over 60% accuracy on the SUN scene understanding dataset (Xiao 2010). These Most zero-shot learning approaches take are both standard research datasets. an embedding approach, where the data is embedded into a vector space alongside an embedding of the attribute information. Challenges: Examples are then classified using the ◼ Generating a suitably labelled mutual embeddings. training set. The labelling required is significantly more detailed than is Datatypes – Zero-shot learning is generally available in most research datasets. applied to classification in image or video datasets. Recently a few applications of zero- Requirements: shot learning for semantic segmentation ◼ A large dataset with relevant and object detection have been published. attributes labelled for base training. Machine Learning with Limited Data 007
+
+Image (page 10):
+Image on PDF page 10; see the saved visual crop.
+
+Diagram (page 10):
+Visible text: Vehicle
+Tank
+30 | Gun | tracks | camouflage | metal
+
+--- PAGE 11 ---
+Small amount of data, mostly labelled Defence is typically interested in rare A number of approaches have been events, whether that is to identify unusual developed to train machine learning models or unexpected objects, or events that have on small amounts of labelled data. In the not previously occurred. In these scenarios absence of sufficient data to train classical we may only have a small number of machine learning models in the problem of examples of events or objects of interest, interest, these models look to utilise prior but a large amount of data to find other experience learned from similar datasets with examples of these events or objects in. large amounts of labelled data, or use human Computers are very effective at searching knowledge to reduce the training required. large amounts of data, so if we can apply machine learning to problems with only Collecting and labelling more data, a few examples, we can significantly if possible, is the best way to improve the reduce the load on analysts. accuracy achieved by machine learning on limited data problems. Small amount of data, mostly labelled Is there a large amount of data in a similar domain? Yes No Meta-learning Could the class be See Page 010 described semantically? Yes No Knowledge enhanced machine learning Traditional machine learning See Page 017 See Page 009 008 Machine Learning with Limited Data
+
+--- PAGE 12 ---
+Small amount of data, mostly labelled
+
+Traditional machine learning TRL: 6
+Whilst deep learning approaches are the state-of-the-art machine learning models, they require large amounts of data to be trained. Shallower neural networks and traditional machine learning require less data to train and can outperform deep neural networks in limited data scenarios.
+
+approaches
+Support Vector Machines – Learn a hyperplane to separate the space into two-regions for two-way classification. Kernels can be used to map the space in order to apply SVMs to problems which are not linearly-separable. k wor lnet eura eepn D e c n a alnetwork m allowneur r Sh o f r e P
+
+Traditional machine learning
+
+Data
+
+A comparison of the performance of traditional machine learning and neural networks when training data is limited.
+
+Performance – For simple problems, Decision Trees – Learning the structure and traditional machine learning approaches rules of a decision tree to classify examples. can achieve high accuracy. The training of Ensembles of decision trees, known as random forests, are often used to reduce the overfitting of decision trees. Multi-Layer Perceptrons – An artificial neural network approach consisting of multiple layers of perceptrons. A perceptron is a model of a neuron, which outputs a linear combination of the inputs. MLPs are then trained via backpropagation.
+
+Datatypes – Traditional machine learning methods generally take a vector input, so for the complex data structures of interest to Defence, such as imagery, feature extraction is generally required.
+
+Implementations – The Scikit-learn python library implements most traditional machine learning approaches. traditional machine learning approaches still needs a number of examples per class, typically hundreds.
+
+Challenges: • Suitable pre-processing to effectively train these models on complex datasets.
+
+Requirements: • Hundreds of examples per class.
+
+Machine Learning with Limited Data 009
+
+--- PAGE 13 ---
+Small amount of data, mostly labelled Meta-learning TRL: 1-3 The goal of meta-learning is to learn to a new environment and generalise how a machine learning model learns to unseen tasks. and leverage this to train the model more quickly. A meta-learner is trained Meta-learning is a data driven approach, on a number of similar learning tasks. so it requires a large number of tasks from This allows it to learn the optimal way a similar dataset for meta-training. Once to learn an unseen task. For limited data the meta-model is trained, it can be applied problems, meta-learning can be used to learn an unseen task with limited data. to learn how to train a task when given Meta-learning also supports life-long only a few examples, rapidly adapt learning so the model can be improving as it is being used. Types of Meta-learning Learning from memory Augmenting a neural network with an external memory source to remember examples seen previously. 0 0* 1 Learning as optimisation Expressing meta-learning as an 0* optimisation problem, either using a second 3 0* network to predict parameters or learning 2 an initialisation for the neural network. Meta-learning Task-learning 010 Machine Learning with Limited Data
+
+Diagram (page 13):
+Visible text: y=
+
+--- PAGE 14 ---
+Small amount of data, mostly labelled
+Learning to compare
+Leveraging similar features in the examples,
+these approaches embed examples into a
+vector space and then use a metric to classify.
+Learning by task inference
+Using prior knowledge of the structure of
+naturally occurring tasks to improve model
+performance.
+Machine Learning with Limited Data 011
+Images from icon8.com
+
+Diagram (page 14):
+Visible text: pend
+So
+
+Diagram (page 14):
+Visible text: Ah
+-
+fy
+
+--- PAGE 15 ---
+Small amount of data, mostly labelled – Meta-learning Few-shot learning TRL: 3 Few-shot learning is an approach to Learning to compare: classification when there are a small ◼ Matching Networks (Vinyals et al. 2016). number of examples per class. Few-shot ◼ Prototypical Networks (Snell et al. 2017). learning considers N-way k-shot problems, ◼ Relation Networks (Sung et al. 2018) in which we have N classes and each class has k labelled examples. Learning as optimisation: ◼ MAML (Finn et al. 2017). Few-shot learning uses meta-learning ◼ Meta Networks (Munkhdalai and Yu across a range of classification tasks to 2017). adapt rapidly to a new task. The meta- learning model is trained on a large set of ◼ SNAIL (Mishra et al. 2018). N-way k-shot tasks from a similar dataset. Dog Cat ? Tiger Tortoise Lion A 5-way 4-shot problem. 012 Machine Learning with Limited Data
+
+Image (page 15):
+Visible text: Siig) pee
+Wer 2h ee
+
+Image (page 15):
+Visible text: mS Ue
+re ntins 4
+
+--- PAGE 16 ---
+Datatypes – The approaches to few-shot learning from literature focus on image classification, with only a few examples considering other datasets, such as time-series. Many of the few-shot learning approaches for image classification could be adapted for other datasets by replacing the embedding neural network, or are model agnostic so could be applied to any model.
+
+Implementations – Most recent papers on few-shot learning have made their code available on GitHub. These implementations are typically specific to the datasets tested in the paper so require adapting to new datasets. Dstl have modified some of these models to apply to Defence and more general datasets.
+
+Performance – On the miniImageNet dataset (Vinyals et al. 2016) the current best performing models achieving around 80% accuracy on 5-way 5-shot tasks and 60% accuracy on 5-way 1-shot tasks. Meta-learning – Small amount of data, mostly labelled
+
+Challenges: • Few-shot learning requires the task to be structured as a N-way k-shot problem. • Hyper-parameter optimisation can be difficult.
+
+Requirements: • A large dataset from a similar distribution. • Access to high performance compute to train the meta-learner.
+
+Machine Learning with Limited Data 013
+
+--- PAGE 17 ---
+Small amount of data, mostly labelled – Meta-learning Few-shot segmentation TRL: 2 and object detection Many of the approaches to few-shot each of the N classes. In few-shot object learning and meta-learning can also be detection we look to detect N classes of applied to image segmentation and object using k examples per class. These object detection problems. problem structures mirror the N-way k-shot problems used for few-shot classification. In few-shot segmentation we look to classify the pixels of the image into N classes where we have k examples for An example of segmentation and object detection on overhead imagery (Tanner et al 2009). 014 Machine Learning with Limited Data
+
+Image (page 17):
+Image on PDF page 17; see the saved visual crop.
+
+--- PAGE 18 ---
+Meta-learning – Small amount of data, mostly labelled Datatypes – Few-shot segmentation and object detection have currently only been applied to research datasets such as PASCAL VOC (Everingham et al. 2010) and FSS-1000 (Li et al. 2020). Implementations – Some of these approaches have code available on GitHub. At Dstl we have implemented some of the base meta-learning techniques using standard segmentation and object detection models. Performance – State-of-the-art few-shot Shot in support set segmentation and object detection models demonstrate a significant improvement in The improvement in mean IOU compared to mean IOU (Intersection over Union) over fine-tuning (MetaSegNet from Tian et al 2020). fine-tuning approaches. Challenges: ◼ Few-shot segmentation and object detection are immature and have only been applied to relatively simple research datasets. ◼ Segmentation models are complex which makes training meta-learners difficult and computationally expensive. ◼ Hyper-parameter optimisation can be difficult. Requirements: ◼ A large dataset of similar problems. ◼ Access to high performance compute to train the meta-learner. Machine Learning with Limited Data 015 mIoU (%) 55 Fine-tuning MetaSegConv(baseline) 50 MetaSegNet 45 40 35 30 1 2 3 4 5
+
+Diagram (page 18):
+Visible text: —— Fine-tuning:
+—— Metasegconv{baseline}
+— Metasegnet
+ce”
+
+--- PAGE 19 ---
+Small amount of data, mostly labelled – Meta-learning Meta-reinforcement learning TRL: 2 In reinforcement learning, limited data problems occur when a model is required to adapt quickly to a new scenario or reinforcement learning is used to train Environment a real-world agent, such as a robot, and extensive training is not possible. Meta- learning is able to train reinforcement Interpreter n Reward o learning models to adapt rapidly to new Acti environments. A common approach to meta- State reinforcement learning is learning an initial state of the agent, such that it can be updated in a few training runs. This Agent approach was introduced in the MAML The reinforcement learning process. model (Finn et al. 2017) and there has been a large number of papers developing meta-reinforcement learning recently. Performance – Meta-reinforcement learning has been able to learn research Meta-reinforcement learning can also tasks in a few simulated runs where classical help to train real-world agents through reinforcement learning approaches require simulation, such that they can better thousands of runs. handle the uncertainty present in the real-world. This has recently been applied to train a robot hand to solve a Rubik’s Challenges: cube through simulation (Akkaya et ◼ Meta-reinforcement learning has al. 2019). only been applied to bounded challenges, such as research Datatypes – Meta-reinforcement learning datasets and simple robots. can be applied to any reinforcement learning environment where there are a Requirements: large number of similar tasks to the target task, or where the agent needs to adapt ◼ A task where the goal can be quickly to the environment. randomly generated. ◼ Access to high performance Implementations – Many of the recent compute to train the meta-learner. meta-reinforcement learning models have code available on GitHub. 016 Machine Learning with Limited Data
+
+Image (page 19):
+Visible text: ca
+
+Diagram (page 19):
+Visible text: Reward o Ac te
+
+Image (page 19):
+Visible text: a)
+NX
+
+Image (page 19):
+Visible text: [OO]
+Ca
+7 m
+
+--- PAGE 20 ---
+Small amount of data, mostly labelled
+
+machine learning
+Machine learning is heavily dependent on the availability of data. Knowledge enhanced machine learning looks to use the innate human ability to learn with limited data and reason over the data available. These approaches therefore look to combine human knowledge, expressed in a structured manner, with the available training data to produce a machine learning model which can be trained with limited data.
+
+Ontological approaches are an effective way of representing and reasoning over knowledge, but are not able to learn new objects. On the other hand machine learning has proved effective at learning new objects, but requires a large amount of training data and does not allow explainability and the injection of human knowledge to improve prediction. The approaches to knowledge enhanced machine learning look to bridge these two fields, by allowing human knowledge to be represented and utilised by the machine learning model and reducing the amount of training data required. Zero-shot learning (considered in section “Small amount of data, mostly unlabelled”) uses some of the knowledge enhanced embedding approaches to train a classifier using only a semantic description. In this section we instead look at augmenting the training data with expert knowledge.
+
+Approaches • Symbolic models – Fusing a representation of contextual knowledge into machine learning algorithms to improve algorithm performance.
+
+• Hierarchical learning – Using a taxonomy representing the relationship between objects and higher level classes.
+
+• Zero-shot learning – Leveraging descriptions of objects in terms of known attributes when there are no examples available for training. This was considered in the section on problems with a small amount of data, mostly unlabelled.
+
+Machine Learning with Limited Data 017
+
+--- PAGE 21 ---
+Small amount of data, mostly labelled – Knowledge enhanced machine learning Symbolic models TRL: 1 As humans, we use our understanding of the world to help us perform limited data learning tasks. This could be identifying known features of the class of interest, or decomposing it into common parts. Some zero-shot learning approaches use attributes to classify unseen classes, given only a description in terms of these attributes. Symbolic models look to exploit similar approaches when there is some training data available. An example of a decomposition of a Foxhound vehicle into its constituent parts. Symbolic model machine learning algorithms use some representation of Implementations – Symbolic models knowledge, generally human curated, for machine learning are a very low such as ontology, database or contextual TRL technique so there are only a few information. One can consider a traditional implementations available on GitHub. machine learning algorithm as learning a representation of the features in the classes, this approach looks to reduce the Challenges: amount of data by introducing a human ◼ This is a very low TRL technique with constructed representation. significant research required before symbolic model approaches can Datatypes – Symbolic models could in be effectively applied to real-world theory be applied to any machine learning problems. model. In most research to date, these models have been applied to image Requirements: classification problems. The knowledge ◼ A representation of knowledge, representation could be a common generated by the operator or from ontology (e.g. WordNet (Miller 1998)), a common ontology or taxonomy, a database of object specifications (e.g. that can effectively describe the Janes.com) or a custom representation classes. curated for the task by a human operator. ◼ Training data in a similar domain to train the model to use the representation. 018 Machine Learning with Limited Data
+
+Image (page 21):
+Visible text: Seine —s
+
+--- PAGE 22 ---
+Knowledge enhanced machine learning – Small amount of data, mostly labelled Hierarchical learning TRL: 2-4 As humans we categorise objects in Military aircraft hierarchical taxonomies. For example a tank is a type of vehicle, and a Challenger 2 is a type of tank. For Fixed wing Rotary wing aircraft aircraft limited data problems, we can exploit this hierarchical taxonomy to train classifiers for the higher level classes, Bomber Fighter Reconnaissance aircraft aircraft aircraft which have more data available. Hierarchical learning also gives a way Typhoon F-22 F-35 to manage the uncertainty inherent in limited data problems, by being able to A hierarchy for military aircraft. express confidence in higher level classes, while having less confidence in the lower level classes. For example with hierarchical Implementations – Hierarchical learning we can express that an object is learning can be easily implemented for a tank, but the model is uncertain about the simple hierarchy by training different what model of tank. models for each layer in the taxonomy. The poly-hierarchical and ontological In fact this hierarchy is a simplification of approaches to learning are less developed the way humans understand taxonomies and more of an academic topic. There and poly-hierarchy gives a more accurate are some implementations on GitHub representation. For example a tank is a accompanying recent papers on the topic. military vehicle, but is also a tracked vehicle and an armoured vehicle. These classes are distinct, but overlapping so cannot be represented in a standard hierarchy. Challenges: Ontology is a common way of expressing ◼ Hierarchical learning requires the semantic poly-hierarchies which could be training of many different models for exploited by hierarchical learning. different levels of the hierarchy. Datatypes – Hierarchical learning is Requirements: typically applied to classification problems, ◼ A (poly-)hierarchical taxonomy to with most examples using imagery describe the objects of interest. datasets. ◼ Data for other classes within the taxonomy. Machine Learning with Limited Data 019
+
+Chart (page 22):
+Visible text: Military aircraft aircraft aircraft aircraft aircraft aircraft
+
+--- PAGE 23 ---
+Large amount of data,
+
+mostly unlabelled
+Defence has access to large amounts of data, but most of this does not have suitable labelling for applying machine learning. To be able to apply machine learning to this data, human labelling is required. Human labelling of data is a time consuming and expensive process. To apply machine learning to such problems, inherent features in the data can be used to classify the examples through semi, self and unsupervised learning. The human labelling of data can also be made more efficient by selecting the most informative examples through active learning.
+
+Large amount of data, mostly unlabelled
+
+Is any of the data labelled?
+
+Yes
+
+Could more examples be labelled?
+
+No Yes
+
+Semi-supervised Active learning learning See Page 21 See Page 22
+
+020 Machine Learning with Limited Data No
+
+Is there a relevant self-supervised objective?
+
+No Yes
+
+Unsupervised Self-supervised learning learning See Page 23 See Page 24
+
+--- PAGE 24 ---
+Large amount of data, mostly unlabelled Semi-supervised learning TRL: 5 Semi-supervised learning looks to utilise both labelled and unlabelled data to train machine learning models. For semi-supervised learning to be effective, the data must satisfy one of the following assumptions: ◼ Data points that are close to each other are more likely to share a label. ◼ The data forms clusters and points in the same cluster are more likely to share a label. ◼ The data points lie approximately on a manifold of much lower dimension than the input space. The influence of unlabelled examples in training. If one of these assumptions are satisfied, a semi-supervised algorithm can assign a label to unlabelled examples using their labelled, semi-supervised approaches proximity to known labelled examples. can achieve an accuracy close to this This produces extra labelled data for the performance with a fraction of the labelled machine learning model to be trained on. data. Semi-supervised will not always improve the performance over using just Datatypes – Semi-supervised learning the labelled examples, such as when neither can be applied to any datatype, as long of the assumptions above hold. as there is a suitable embedding into a vector space which satisfies one of the assumptions above. Implementations – The Scikit-learn python Challenges: library implements an approach to label ◼ Semi-supervised learning will not propagation for semi-supervised learning. perform as well as if all data points For more complex approaches, many of the were labelled. semi-supervised papers in literature have accompanying code available on GitHub. Requirements: Performance – Although semi-supervised ◼ The data must satisfy one of the learning approaches will not perform as assumptions listed above. well as if the whole dataset was human Machine Learning with Limited Data 021 0.3 AS-YB CC rednu desnecil / nirehceT
+
+Diagram (page 24):
+Visible text: '
+'
+ole
+
+'
+
+'
+
+'
+
+'
+
+'
+
+t
+wf ° Oe
+of
+
+--- PAGE 25 ---
+Large amount of data, mostly unlabelled Active learning TRL: 3 Active learning looks to reduce the amount of data required for human labelling. An active learning model uses a query strategy to select examples for a human operator to label, with the aim of selecting the most informative examples. Types of query strategy ◼ Uncertainty ◼ Query-by-committee Number of samples ◼ Expected model change The improvement in accuracy that active ◼ Expected error or variance minimisation learning can bring over arbitrary data ◼ Information gain labelling. ◼ Meta-learning implemented in these libraries but have Given a small number of seed labelled code available on GitHub. examples, a machine learning model is trained initially on these examples. The Performance – Active learning has been query strategy is then used to select shown to improve the rate of training for unlabelled examples for human labelling. a number of academic datasets. Active Once these have been labelled, the machine learning has also been applied effectively to learning model is updated using the new remote sensing problems. labelled examples and this process is repeated to train the model. Challenges: Datatypes – Active learning is a training ◼ For deep models or complex strategy rather than a model, so can be datasets, hyper-parameter applied to any machine learning model. refinement is required for active Active learning has been applied to learning to outperform arbitrary classification, detection, segmentation and labelling. regression problems. Implementations – There are a number Requirements: of open source python libraries (ModAl, ◼ A human operator to label Libact, AliPy) implementing active learning the selected examples for the frameworks with common query strategies. algorithm. Many recent developments are not 022 Machine Learning with Limited Data Test accuracy 1.0 0.9 0.8 0.7 0.6 Active learning Baseline 0.5 100 125 150 175 200 225 250 275 300
+
+--- PAGE 26 ---
+Large amount of data, mostly unlabelled Unsupervised learning TRL: 5 Unsupervised learning is a machine learning approach which looks to learn patterns in data without labels. The unsupervised learning models therefore have to learn the structure of the input data based on features. Often the characteristic features of a dataset are not obvious from the raw data, and therefore performing feature extraction on the input data can significantly improve the performance of some unsupervised Unsupervised dimension reduction learning approaches. and clustering on the MNIST dataset (LeCun et al. 1998). Unsupervised learning approaches Clustering – Clustering techniques look Implementations – The Scikit-learn python to group data points based on features in library implements many unsupervised the data. learning algorithms. Anomaly detection – Anomaly detection Performance – Unsupervised learning techniques look to identify whether a data approaches perform significantly worse point lies in the same distribution as the than supervised and semi-supervised existing examples. approaches because the algorithm does not Neural network – Neural network know the goal it is being tested against in approaches look to embed the data in a unsupervised learning. lower dimensional space, whilst retaining the characteristic properties. Manifold learning is one of the main unsupervised Challenges: neural network approaches. Latent variables – These are techniques for ◼ Unsupervised learning approaches reducing complexity of the data by learning perform significantly worse than latent variables. This includes Principal supervised learning approaches. Component Analysis and the Method of Moments. Requirements: ◼ Feature extractor for data. Datatypes – Unsupervised learning can be ◼ Human interaction with the applied to any dataset. Some unsupervised algorithms to ensure the outputs learning approaches, such as clustering, are relevant to the problem of benefit from pre-processing the data with interest. a feature extractor. Machine Learning with Limited Data 023
+
+Image (page 26):
+Image on PDF page 26; see the saved visual crop.
+
+--- PAGE 27 ---
+Large amount of data, mostly unlabelled Self-supervised learning TRL: 1 Self-supervised learning is a type of unsupervised learning where the data is 1 2 3 autonomously labelled to provide the supervision. Self-supervised learning uses learning objectives in a special form to 5 4 predict only a subset of information using the rest. 6 7 8 By training with the self-supervised learning objective, the model will learn a good representation of the dataset which can be used for other tasks. The self-supervised task therefore doesn’t need to be related X = ( , ); Y = 3 to the task we want to train against. Self-supervised tasks A relative positional self-supervised learning ◼ Relative position in images objective (Doersch et al. 2015). (Doersch et al. 2015). ◼ Image patch prediction Implementations – Self-supervised learning (Pathak et al 2016). is a very low TRL technique and therefore ◼ Pixel colour from monochrome input there are only a few implementations (Zhang et al. 2016). available on GitHub. ◼ Video frame sequence ordering (Misra et al. 2016). ◼ Audio-Visual co-supervision Challenges: (Relja and Zisserman, 2018). ◼ Self-supervised learning is a very ◼ Prediction of next word in a sentence low TRL technique so has not been (Zhenzhong Lan, et al 2019). applied to real-world datasets or problems. Datatypes – Self-supervised learning has mainly been applied to image, video and Requirements: text datasets. It could be applied to any ◼ A large amount of unlabelled data. dataset given a suitable self-supervised ◼ A relevant self-supervised learning learning objective. objective. 024 Machine Learning with Limited Data
+
+Image (page 27):
+Visible text: 1 3 5 4 6 7 8
+
+Image (page 27):
+Visible text: ae
+
+Image (page 27):
+Image on PDF page 27; see the saved visual crop.
+
+--- PAGE 28 ---
+refinement
+Whilst the approaches to learning with limited data presented in this guide improve on classical approaches to machine learning, these models cannot achieve the accuracy of a deep neural network trained with a large amount of data. There are a number of model refinement techniques which could improve the accuracy and allow effective deployment of limited data machine learning models. Whilst all of these techniques are not specific to machine learning with limited data, they are likely to be particularly powerful and relevant to limited data problems. Approaches • Transfer learning – Using datasets with a similar distribution to initially train the dataset, or pretrained models, then fine tune on the dataset of interest.
+
+• Uncertainty – Modelling the uncertainty in the problem to know when the model can be trusted.
+
+• Context injection – Using contextual information to improve the performance of machine learning models.
+
+• Data augmentation – Generating more data through transformations on the existing dataset.
+
+• Generated data – Generating more data for use in training.
+
+Machine Learning with Limited Data 025
+
+--- PAGE 29 ---
+Model refinement
+
+Transfer learning
+When training machine learning models, part of the training effort is to learn how to extract features from the data. For problems on similar datasets, the feature extraction part of the neural network will be very similar. Transfer learning looks to reduce the amount of training data required to learn a task, by reusing the feature extraction layers learned on other datasets. Transfer learning can be used in conjunction with the approaches to learning with limited data to boost the performance of these models.
+
+TRL: 3-6
+One type of transfer learning which has been well studied is that of Domain Adaptation. Domain adaptation refers to transfer learning when the sample and label spaces are unchanged, but the examples come from different probability distributions. In Defence, we may be able to train a vehicle classifier using imagery from a ground based camera, and use domain adaptation to transfer this classifier to overhead imagery.
+
+Performance – Transfer learning has been demonstrated to be an effective approach One approach to transfer learning is to take to improving performance of machine a deep learning model trained on a large dataset, with a similar distribution to the learning models on limited data problems when there is a large dataset available problem of interest and fine tune or replace which is similar to the task problem. For and train the final few layers of the neural some problems, transfer learning can network on the new problem. It is generally outperform limited data machine learning understood that the first layers of a neural network are performing general feature extraction and the final layers are problem specific. The number of layers to fine-tune or retrain is generally chosen by heuristics and guesswork. There has been an effort to quantify the generality of layers for transfer learning (including Yosinski et al. 2014).
+
+026 Machine Learning with Limited Data approaches, such as few-shot learning.
+
+Implementations – Transfer learning can be easily applied in most machine learning libraries. A number of pre-trained models have been released to allow transfer learning such as Google’s Big Transfer model (Kolesnikov et al. 2019).
+
+--- PAGE 30 ---
+Model refinement Uncertainty TRL: 3 In machine learning there are many sources Dropout as Bayesian approximation of uncertainty, but classical machine – Training Bayesian neural networks is learning does not model the uncertainty difficult and deep networks can become in the model. The uncertainty in machine intractable. Instead Bayesian neural learning can be split into two types: networks can be approximated using Aleatoric uncertainty – The inherent dropout (Gal 2016). variation in a physical system or environment. Otherwise known as statistical or stochastic uncertainty. Epistemic uncertainty – The uncertainty due to a lack of knowledge of the system or environment. 1 7 For limited data problems, the epistemic uncertainty will be high. To be able to effectively apply limited data machine learning approaches to real-world problems, approaches to handle the uncertainty need to be considered. Confidence estimation – A softmax layer will turn the output of the neural network into a probability distribution. This gives a representation of the uncertainty of the prediction. Dirichlet loss – Learning an uncertainty measure through a loss function based on the Dirichlet distribution (Sensoy et al 2018). Bayesian machine learning – Bayesian neural networks take distributions for the weights, rather than values used in Prediction of a neural network as a digit 1 is rotated, and the Dirichelt loss uncertainty standard neural networks. This allows the (BAE, 2019). neural network to represent and learn the uncertainty in prediction. Bayesian neural networks are trained using Bayes theorem. Machine Learning with Limited Data 027 Classification probability 1.0 0.8 0.6 0.4 0.2 0.0 0 20 40 60 80 100 120 140 160 180 Rotation degree 1 uncertainty Classification probability 1.0 0.8 0.6 0.4 0.2 0 20 40 60 80 100 120 140 160 180 Rotation degree
+
+Chart (page 30):
+Visible text: i t 0.4 7
+
+Chart (page 30):
+Visible text: a c 0.4 uncertainty
+
+--- PAGE 31 ---
+Model refinement Context injection TRL: 3 In many machine learning problems, there is metadata or contextual information available. With typical machine learning models, this context is thrown away, but incorporating this metadata or context into the machine learning model can improve the accuracy of the model on the problem of interest. Context injection approaches look to augment typical machine learning models with the contextual information. Examples of contextual information Temporal information – Time of day, Season. Spatial information – Region, Latitude An example of off-nadir imagery from the SpaceNet-4 dataset (SpaceNet 2018). and Longitude. Collection information – Nadir angle. Implementations – There are a number There are a number of different ways of context injection models available on context can be included in a machine GitHub from recent papers and successful learning model. Including context in a contestants in the SpaceNet 4 challenge. machine learning model can be trained Performance – Context injection has been from scratch, with end-to-end approaches, demonstrated to improve the performance or can augment an already trained model on a number of problems. For overhead by combining the prediction and context imagery, a model including the nadir angle distributions to make a final prediction. as context achieved the best performance on the SpaceNet 4 challenge. We have Datatypes – Context injection has demonstrated up to 7x improvement in largely been applied to imagery data for classification accuracy by including context classification or detection problems. At Dstl in an audio classification problem. we have done research to demonstrate that context injection can also be effectively applied to audio classification. 028 Machine Learning with Limited Data 0.4 AS-YB CC rednu desnecil /srentraP teNecapS yb tesataD teNecapS ehT
+
+Image (page 31):
+Visible text: bias Mt Fe
+
+--- PAGE 32 ---
+Model refinement Data augmentation TRL: 2-6 Data augmentation is a technique widely applied more carefully in order to avoid employed in machine learning, not just reinforcing the biases in the limited amount for limited data problems, to increase the of data. variation in the dataset. Data augmentation Implementations – There are a number exploits invariances in the dataset to of common implementations of simple generate new examples from the available transformations. The standard machine dataset. learning libraries like TensorFlow and PyTorch have simple augmentations built For larger datasets, simple transformations in, and a wider range of transformations such as reflection, rotation and translation are available in python libraries such are effective. There are also more complex as ImgAug. For the deep learning approaches to data augmentation such approaches, many of the models have as Generative Adversarial Networks and GitHub repositories containing code for Style Transfer Networks. In the limited data the approaches. scenario, data augmentation needs to be Image data augmentation Basic image Deep learning manipulations approaches Kernel Colour space filters transformations Random erasing Geometric Mixing Adversarial Neural style GAN data transformations images training transfer augmentation A taxonomy of data augmentation approaches from (Shorten and Khoshgoftaar, 2019). Machine Learning with Limited Data 029
+
+Diagram (page 32):
+Visible text: Image data augmentation Basic image Deep learning manipulations approaches Kernel Colour space filters transformations Random erasing Geometric Mixing Adversarial Neural style GAN data transformations images training transfer augmentation
+
+--- PAGE 33 ---
+Model refinement Generated data TRL: 3 When training data is limited, data augmentation may not be sufficient to effectively train machine learning models. In particular, data augmentation often cannot generate the variation required to represent the full task distribution and therefore cause overfitting of the model. Generating similar data can increase the variation in the training data to ensure more of the task distribution can be represented. Simulated data – Simulating data in artificial environments, such as game engines, can be an effective way to generate more data for training. For simulated imagery, game engines such as Unity and Unreal can be used to generate A GAN generated face. realistic imagery. Generative neural networks – Generative There are also non-GAN approaches to Adversarial Networks (GANs) have become data generation for limited data problems, an effective way to generate data based such as the Delta-Encoder (Schwartz et al. off existing datasets. GANs are trained 2018), which learns to apply translations adversarially to generate more realistic data in populous classes and apply these and, depending on structure, can be seeded translations to under-represented classes. by existing examples or random noise to generate new data. There are many variants of GANs which have been developed for different applications, many of these have code available on GitHub. Generative neural network approaches require a large amount of training data, but there have been some GAN approaches developed for data generation when data is limited, such as DAGAN (Antoniou et al. 2017). 030 Machine Learning with Limited Data 0.4 AS-YB CC rednu desnecil / 1cibaraecneicsataD
+
+Image (page 33):
+Image on PDF page 33; see the saved visual crop.
+
+--- PAGE 34 ---
+Technology readiness levels
+
+Machine Learning with Limited Data 031
+
+Table (page 34):
+| TRL | Description |
+| --- | --- |
+| TRL 1 | Basic principles observed and reported. |
+| TRL 2 | Technology concept and/or application formulated. |
+| TRL 3 | Analytical and experimental critical function and/or characteristic proof-of-concept. |
+| TRL 4 | Technology component and/or basic technology subsystem validation in a laboratory environment. |
+| TRL 5 | Technology component and/or basic technology subsystem validation in a relevant environment. |
+| TRL 6 | Technology system/subsystem model or prototype demonstration in a relevant environment. |
+| TRL 7 | Technology system prototype demonstration in an operational environment. |
+| TRL 8 | Actual Technology system completed and qualified through test and demonstration. |
+| TRL 9 | Actual Technology system qualified through successful mission operations. |
+
+--- PAGE 35 ---
+References
+• Akkaya, Ilge, et al. “Solving Rubik’s Cube with a Robot Hand.” arXiv preprint arXiv:1910.07113 (2019). • Antoniou, Antreas, Amos Storkey, and Harrison Edwards. “Data augmentation generative adversarial networks.” arXiv preprint arXiv:1711.04340 (2017). • Arandjelovic, Relja, and Andrew Zisserman. “Objects that sound.” Proceedings of the European Conference on Computer Vision (ECCV). 2018. • Doersch, Carl, Abhinav Gupta, and Alexei A. Efros. “Unsupervised visual representation learning by context prediction.” Proceedings of the IEEE International Conference on Computer Vision. 2015. • Everingham, Mark, et al. “The pascal visual object classes (voc) challenge.” International journal of computer vision 88.2 (2010): 303-338. • Finn, Chelsea, Pieter Abbeel, and Sergey Levine. “Model-agnostic meta-learning for fast adaptation of deep networks.” Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017. • Gal, Yarin, and Zoubin Ghahramani. “Dropout as a bayesian approximation: Representing model uncertainty in deep learning.” International conference on machine learning. 2016. • Lake, Brenden M., Ruslan Salakhutdinov, and Joshua B. Tenenbaum. “Human-level concept learning through probabilistic program induction.” Science 350.6266 (2015): 1332-1338. • Lampert, Christoph H., Hannes Nickisch, and Stefan Harmeling. “Learning to detect unseen object classes by between-class attribute transfer.” 2009 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2009. • LeCun, Yann, et al. “Gradient-based learning applied to document recognition.” Proceedings of the IEEE 86.11 (1998): 2278-2324. • Li, Xiang, et al. “Fss-1000: A 1000-class dataset for few-shot segmentation.” Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020. • Miller, George A. WordNet: An electronic lexical database. MIT press, 1998. • Mishra, Nikhil, et al. “A simple neural attentive meta-learner.” arXiv preprint arXiv: 1707.03141 (2017). • Misra, Ishan, C. Lawrence Zitnick, and Martial Hebert. “Shuffle and learn: unsupervised learning using temporal order verification.” European Conference on Computer Vision. Springer, Cham, 2016. • Munkhdalai, Tsendsuren, and Hong Yu. “Meta networks.” Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017.
+
+032 Machine Learning with Limited Data
+
+--- PAGE 36 ---
+• Kolesnikov, Alexander, et al. “Big transfer (BiT): General visual representation learning.” arXiv preprint arXiv:1912.11370 (2019). • Pathak, Deepak, et al. “Context encoders: Feature learning by inpainting.” Proceedings of the IEEE conference on computer vision and pattern recognition. 2016. • Schwartz, Eli, et al. “Delta-encoder: an effective sample synthesis method for few-shot object recognition.” Advances in Neural Information Processing Systems. 2018. • Sensoy, Murat, Lance Kaplan, and Melih Kandemir. “Evidential deep learning to quantify classification uncertainty.” Advances in Neural Information Processing Systems. 2018. • Shorten, Connor, and Taghi M. Khoshgoftaar. “A survey on image data augmentation for deep learning.” Journal of Big Data 6.1 (2019): 60. • Smith, Linda, and Michael Gasser. “The development of embodied cognition: Six lessons from babies.” Artificial life 11.1-2 (2005): 13-29. • Snell, Jake, Kevin Swersky, and Richard Zemel. “Prototypical networks for few-shot learning.” Advances in neural information processing systems. 2017. • SpaceNet on Amazon Web Services (AWS). “Datasets.” The SpaceNet Catalog. Last modified April 30, 2018. Accessed on [August 20, 2020]. https://spacenetchallenge.github.io/datasets/datasetHomePage.html. • Sung, Flood, et al. “Learning to compare: Relation network for few-shot learning.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018. • Tanner, Franklin, et al. “Overhead imagery research data set—An annotated data library & tools to aid in the development of computer vision algorithms.” 2009 IEEE Applied Imagery Pattern Recognition Workshop (AIPR 2009). IEEE, 2009. • Tian, Pinzhuo, et al. “Differentiable Meta-Learning Model for Few-Shot Semantic Segmentation.” AAAI. 2020. • Vinyals, Oriol, et al. “Matching networks for one shot learning.” Advances in neural information processing systems. 2016. • Yosinski, Jason, et al. “How transferable are features in deep neural networks?” Advances in neural information processing systems. 2014. • Zhang, Richard, Phillip Isola, and Alexei A. Efros. “Colorful image colorization.” European conference on computer vision. Springer, Cham, 2016. • Lan, Zhenzhong, et al. “Albert: A lite bert for self-supervised learning of language representations.” arXiv preprint arXiv:1909.11942 (2019). • Xiao, Jianxiong, et al. “Sun database: Large-scale scene recognition from abbey to zoo.” 2010 IEEE computer society conference on computer vision and pattern recognition. IEEE, 2010.
+
+Machine Learning with Limited Data 033
+
+--- PAGE 37 ---
+Further information
+The approaches to learning with limited data presented in this guide are a part of ongoing research carried out by the Future of AI for Defence project at Dstl. For the approaches presented we are carrying out extensive research to understand the current state-of-the-art, develop the theory to benefit Defence and demonstrate how these approaches for learning with limited data could be applied to Defence problems.
+
+For further information on these approaches to learning with limited data, contact:
+
+E lowshot_learning@dstl.gov.uk
+
+© Crown copyright (2020), Dstl.
+
+This material is licensed under the terms of the Open Government Licence except where otherwise stated. To view this licence, visit http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3 or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU or email: psi@nationalarchives.gsi.gov.uk
+
+034 Machine Learning with Limited Data
+
+--- PAGE 38 ---
+T +44 (0) 1980 950000 E centralenquiries@dstl.gov.uk
+
+For more information about Dstl’s work, DSTL/PUB126061 visit www.gov.uk/dstl © Crown Copyright 2020

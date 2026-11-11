@@ -6,7 +6,7 @@ def main():
 
     query = input("\nAsk a question about the PDF: ")
 
-    results = semantic_search(query, top_k=3)
+    results = semantic_search(query, top_k=4)
 
     print("\n===== SEARCH RESULTS =====")
 

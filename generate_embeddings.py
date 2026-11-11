@@ -1,4 +1,5 @@
 
+import argparse
 import json
 from pathlib import Path
 
@@ -11,15 +12,20 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 CHUNKS_PATH = PROJECT_ROOT / "extracted_text" / "chunks.json"
 
 OUTPUT_PATH = PROJECT_ROOT / "extracted_text" / "embeddings.json"
+STRUCTURED_CHUNKS_PATH = PROJECT_ROOT / "extracted_text" / "structured_chunks.json"
+STRUCTURED_OUTPUT_PATH = PROJECT_ROOT / "extracted_text" / "structured_embeddings.json"
 
 
-def main():
+def main(use_structured: bool = False):
+
+    chunks_path = STRUCTURED_CHUNKS_PATH if use_structured else CHUNKS_PATH
+    output_path = STRUCTURED_OUTPUT_PATH if use_structured else OUTPUT_PATH
 
     # Step 1: Load existing chunks
     print("Loading chunks...")
 
     chunks = json.loads(
-        CHUNKS_PATH.read_text(encoding="utf-8")
+        chunks_path.read_text(encoding="utf-8")
     )
 
     print(f"Total chunks: {len(chunks)}")
@@ -50,7 +56,7 @@ def main():
         })
 
     # Step 5: Save embeddings
-    OUTPUT_PATH.write_text(
+    output_path.write_text(
         json.dumps(
             embedded_chunks,
             indent=4,
@@ -66,8 +72,14 @@ def main():
 
     print(f"Vector dimensions: {len(embeddings[0])}")
 
-    print(f"Saved to: {OUTPUT_PATH}")
+    print(f"Saved to: {output_path}")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Generate embeddings for PDF chunks.")
+    parser.add_argument(
+        "--structured",
+        action="store_true",
+        help="Use structured_chunks.json and save structured_embeddings.json.",
+    )
+    main(use_structured=parser.parse_args().structured)

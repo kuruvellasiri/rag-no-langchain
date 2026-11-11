@@ -1,5 +1,5 @@
 
-from src.chunking.text_chunker import split_text_recursive
+from src.chunking.text_chunker import create_recursive_chunks, split_text_recursive
 
 
 def test_chunk_size_limit():
@@ -54,3 +54,25 @@ def test_invalid_overlap():
         pass
     else:
         raise AssertionError("Expected ValueError")
+
+
+def test_chunk_metadata_records_actual_overlap_and_supports_custom_ids():
+    text = "This is a sample sentence. " * 200
+    chunks = create_recursive_chunks(
+        [{"page_content": text, "metadata": {"page": 3}}],
+        chunk_size=100,
+        overlap=20,
+        chunk_id_prefix="structured_page",
+    )
+
+    assert chunks[0]["chunk_id"] == "structured_page_3_chunk_1"
+    for previous, current in zip(chunks, chunks[1:]):
+        actual = 0
+        maximum = min(20, len(previous["page_content"]), len(current["page_content"]))
+        for size in range(maximum, 0, -1):
+            if previous["page_content"][-size:] == current["page_content"][:size]:
+                actual = size
+                break
+        assert current["metadata"]["overlap"] == actual
+
+    assert any(chunk["metadata"]["overlap"] < 20 for chunk in chunks[1:])

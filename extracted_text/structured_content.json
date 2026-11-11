@@ -1,0 +1,2722 @@
+{
+  "source": "machine_learning_pdf.pdf",
+  "page_count": 38,
+  "elements": [
+    {
+      "element_id": "page_1_element_1",
+      "page_number": 1,
+      "element_type": "image",
+      "text": "Visible text: Defence Science and Technology Laboratory Machine Learning with Limited Data Future of AI for Defence Project Autonomy Programme",
+      "bounding_box": [
+        -1.0648006,
+        -1.0630126000000928,
+        422.0095419,
+        596.3394156999999
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_01_image_01_-1_-1_422_596.png",
+      "ocr_text": "Defence Science and Technology Laboratory Machine Learning with Limited Data Future of AI for Defence Project Autonomy Programme",
+      "description": ""
+    },
+    {
+      "page_number": 2,
+      "element_type": "paragraph",
+      "text": "Defence Science and Technology Laboratory\nMachine Learning\nwith Limited Data\nFuture of AI for Defence Project\nAutonomy Programme",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_2_element_1"
+    },
+    {
+      "page_number": 3,
+      "element_type": "heading",
+      "text": "Foreword",
+      "bounding_box": [
+        39.685,
+        57.84809999999993,
+        134.4181,
+        78.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_3_element_1"
+    },
+    {
+      "page_number": 3,
+      "element_type": "paragraph",
+      "text": "Machine learning offers Defence significant benefits, such as increasing the amount of data that can be analysed and reducing the load on human analysts. State-of-the-art approaches for machine learning, such as deep learning, can achieve high accuracy on a wide range of problems if sufficient training data is available.",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        380.39267500000017,
+        149.98084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_3_element_2"
+    },
+    {
+      "page_number": 3,
+      "element_type": "paragraph",
+      "text": "Whilst there are a large number of problems in Defence which could benefit from machine learning, for many of these, state-of-the-art machine learning models cannot be applied due to a lack of training data or because of the expense and time required to label sufficient examples.",
+      "bounding_box": [
+        39.685,
+        164.23084999999998,
+        374.6589250000001,
+        206.23084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_3_element_3"
+    },
+    {
+      "page_number": 3,
+      "element_type": "paragraph",
+      "text": "Machine learning is a data driven approach, with deep learning models usually requiring thousands of examples per class. In a limited data problem, there is not the large amount of data in the problem of interest needed to train a model, so we must use limited data approaches which generally utilise large labelled datasets with similar distributions or human knowledge to allow it to adapt rapidly to a small dataset. Whilst limited data machine learning approaches all improve over classical machine learning approaches for problems with a small amount of data, the best way to improve machine learning in limited data scenarios is to collect and label more data. In Defence there are a large number of problems where collection of further data is not possible or cost effective.",
+      "bounding_box": [
+        39.685,
+        220.48084999999998,
+        379.1972500000001,
+        318.73085
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_3_element_4"
+    },
+    {
+      "page_number": 3,
+      "element_type": "paragraph",
+      "text": "This handbook looks to provide a guide to the landscape of machine learning techniques for limited data problems in 2020. It is designed to inform and guide machine learning practitioners on the limited data machine learning approaches currently possible. This captures some of the knowledge gained from Dstl research into low-shot learning carried out by the Future of AI for Defence project, part of the Autonomy programme.",
+      "bounding_box": [
+        39.685,
+        332.98085,
+        368.90785000000017,
+        386.2308499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_3_element_5"
+    },
+    {
+      "page_number": 3,
+      "element_type": "paragraph",
+      "text": "DSTL/PUB126061 © Crown Copyright 2020",
+      "bounding_box": [
+        39.685,
+        479.12254999999993,
+        131.887825,
+        498.62254999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_3_element_6"
+    },
+    {
+      "page_number": 4,
+      "element_type": "heading",
+      "text": "Contents",
+      "bounding_box": [
+        39.685,
+        57.84809999999993,
+        129.71409999999997,
+        78.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_4_element_1"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "How much data is required? 002 Human ability to learn with limited data 003 Limited data problems 004 Selecting the approach 005",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        262.6825,
+        149.98084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_2"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly unlabelled 006 Zero-shot learning 007",
+      "bounding_box": [
+        39.685,
+        168.02209999999997,
+        262.68535,
+        187.48084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_3"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled 008 Traditional machine learning 009 Meta-learning 010 - Few-shot learning 012 - Few-shot segmentation and object detection 014 - Meta-reinforcement learning 016 Knowledge enhanced machine learning 017 - Symbolic models 018 - Hierarchical learning 019",
+      "bounding_box": [
+        39.6851,
+        205.52209999999997,
+        262.69085,
+        303.73085
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_4"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled 020 Semi-supervised learning 021 Active learning 022 Unsupervised learning 023 Self-supervised learning 024",
+      "bounding_box": [
+        39.6851,
+        321.77209999999997,
+        262.68260000000004,
+        374.9808499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_5"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Model refinement 025 Transfer learning 026 Uncertainty 027 Context injection 028 Data augmentation 029 Generated data 030",
+      "bounding_box": [
+        39.6851,
+        393.0220999999999,
+        262.68260000000004,
+        457.4808499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_6"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Technology readiness levels 031",
+      "bounding_box": [
+        39.6851,
+        468.52209999999997,
+        262.6826,
+        476.77209999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_7"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "References 032",
+      "bounding_box": [
+        39.6851,
+        487.7308499999999,
+        262.6826,
+        495.9808499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_8"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Further information 034",
+      "bounding_box": [
+        39.6851,
+        506.9808499999999,
+        262.6826,
+        515.2308499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_9"
+    },
+    {
+      "page_number": 4,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 001",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        385.9509,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_4_element_10"
+    },
+    {
+      "page_number": 5,
+      "element_type": "paragraph",
+      "text": "How much data is required?\nAs a data driven approach, machine\nlearning is heavily reliant on the availability\nof training data. The amount of labelled\ndata required to train a machine learning\nmodel depends on the dataset and machine\nlearning model, with complex datasets and\ndeeper models typically requiring more\ndata for training.\nDeep neural networks are currently the\nstate-of-the-art machine learning approach\nfor most problems. Deep neural networks\nallow far more generalisation than shallow\nneural networks and traditional machine\nlearning approaches, and therefore achieve\nsignificantly better accuracy. The key\nchallenge with applying deep learning When the amount of data is limited,\nto a problem is the large amount of data machine learning models tend to overfit.\nrequired to train deep learning models. This is when the model is over optimised\nto the training data. Overfitting will\nmean that the model will not be able to\ngeneralise to unseen examples, resulting\nDeep\nneural\nnetwork i\nH\nn\ne\np\nu\no\nri\no\nst\nr\ni c\np\na\ne\nl\nr\nl\nf\ny\no\nt\nr\nh\nm\ne\na\nt\nn\nra\nce\nin\n.\ning of deep neural\nnetworks requires thousands of examples\nShallow\nneural\nnetwork\nper class. When there are problems with\ntens or hundreds of examples per class,\nwe should consider limited data\nTraditional machine learning learning approaches.\nThe learning with limited data approaches\nData considered in this guide look to use the\npower of deep neural networks on problems\nA comparison of the performance of\ntraditional machine learning and neural where there is insufficient data to train\nnetworks when training data is limited. them classically.\n002 Machine Learning with Limited Data\nPerformance\nData\nAn example of the performance of\na deep neural network when training\ndata is limited.\nPerformance",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_5_element_1"
+    },
+    {
+      "page_number": 6,
+      "element_type": "paragraph",
+      "text": "Human ability to learn with limited data\nMost humans are able to learn new objects\nwhen given only a couple of examples.\nThere are a number of different ways that\nhumans approach learning with limited\ndata, such as using prior experience,\ncomparing known and unlabelled examples\nand the ability to internalise semantic\ndescriptions of the object of interest.\nThe learning process of babies is of\nparticular interest for machine learning as A limited data problem from the\ninitially a machine learning model has no Anglo Saxon alphabet (Lake et al. 2015).\nWhen given a single example of an\nprior experience to exploit. If we can start\nunseen character (red), most humans\nto train machine models in a similar manner are able to find all other examples (blue).\nto how babies learn, machine learning\nmodels may be able to get closer to the\nhuman ability at learning with limited data. 6 Lessons from Babies (Smith et al. 2005):\n1 Babies’ experience of the world is\nMany of the machine learning approaches profoundly multimodal.\nfor limited data problems are inspired\n2 B abies develop incrementally, and they\nby the human approach to these tasks.\nare not smart at the start.\nData driven approaches look to use prior\nexperience for low-shot problems, or learn 3 B abies live in a physical world, full of rich\nhow to learn tasks. regularities that organise perception,\naction, and ultimately thought.\nApproaches to machine learning with 4 B abies explore – they move and act in\nlimited data also look to leverage the highly variable and playful ways that\nhuman ability at recognising objects with are not goal-oriented and are seemingly\nonly a few examples, through human random.\nlabelling of examples or semantically 5 B abies act and learn in a social world\ndescribing objects to aid classification. in which more mature partners guide\nlearning and add supporting structures\nto that learning.\n6 B abies learn a language, a shared\ncommunicative system that is symbolic.\nMachine Learning with Limited Data 003",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_6_element_1"
+    },
+    {
+      "element_id": "page_6_element_2",
+      "page_number": 6,
+      "element_type": "image",
+      "text": "Visible text: TAARKAP T4|\r\nPNT Y/¢]0 WN\r\nNEYPT Y[4]+\r\nYPTRMAY P\r\n\r\nJt RF KM EO",
+      "bounding_box": [
+        218.9763794,
+        105.5909719,
+        382.3114816,
+        208.58960709999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_06_image_01_219_106_382_209.png",
+      "ocr_text": "TAARKAP T4|\r\nPNT Y/¢]0 WN\r\nNEYPT Y[4]+\r\nYPTRMAY P\r\n\r\nJt RF KM EO",
+      "description": ""
+    },
+    {
+      "page_number": 7,
+      "element_type": "heading",
+      "text": "Limited data problems",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        229.50400000000002,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_7_element_1"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Machine learning with limited data can be required in all types of problem and dataset. Most of the academic research on learning with limited data has centred on image classification problems but many of these techniques should",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        193.16717500000001,
+        172.48084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_2"
+    },
+    {
+      "page_number": 7,
+      "element_type": "heading",
+      "text": "Types of problem",
+      "bounding_box": [
+        39.685,
+        210.64219999999995,
+        122.79199999999999,
+        220.89219999999995
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_7_element_3"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Classification Determining the class of the example.",
+      "bounding_box": [
+        39.685,
+        229.00949999999995,
+        179.81207499999994,
+        248.46824999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_4"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Regression Approximating the value of a function.",
+      "bounding_box": [
+        39.685,
+        254.3440999999999,
+        183.5056,
+        273.8028499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_5"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Object detection Localising and classifying objects.",
+      "bounding_box": [
+        39.685,
+        279.67879999999997,
+        164.28474999999997,
+        299.13755
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_6"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Event detection Detecting and classifying events in temporal data for example time series, audio or video.",
+      "bounding_box": [
+        39.685,
+        305.01339999999993,
+        182.82249999999993,
+        346.97214999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_7"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Segmentation Partitioning the pixels of an image into multiple segments representing classes.",
+      "bounding_box": [
+        39.685,
+        352.84809999999993,
+        186.15549999999996,
+        383.55684999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_8"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Reinforcement learning Teaching an agent to take the best actions to achieve a goal.",
+      "bounding_box": [
+        39.685,
+        389.43269999999995,
+        168.44274999999996,
+        420.14144999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_9"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "004 Machine Learning with Limited Data apply directly to any machine learning problem or dataset.",
+      "bounding_box": [
+        34.0141,
+        107.98084999999998,
+        360.27667499999995,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_10"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Some examples of problems and datasets that machine learning with limited data have been applied to are:",
+      "bounding_box": [
+        217.5591,
+        141.73084999999998,
+        371.33910000000003,
+        172.48084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_11"
+    },
+    {
+      "page_number": 7,
+      "element_type": "heading",
+      "text": "Machine learning",
+      "bounding_box": [
+        217.5591,
+        210.64219999999995,
+        299.6411,
+        220.89219999999995
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_7_element_12"
+    },
+    {
+      "page_number": 7,
+      "element_type": "heading",
+      "text": "problems in datasets",
+      "bounding_box": [
+        217.5591,
+        223.14219999999995,
+        317.07635,
+        233.39219999999995
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_7_element_13"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Imagery Object detection, segmentation and classification of overhead or natural images.",
+      "bounding_box": [
+        217.5591,
+        239.42489999999992,
+        381.14587499999993,
+        270.13364999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_14"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Time series Classification and event detection in single and multi-dimensional time series.",
+      "bounding_box": [
+        217.5591,
+        276.75949999999995,
+        376.304775,
+        308.21824999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_15"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Text Natural language processing, generation and question answering.",
+      "bounding_box": [
+        217.5591,
+        314.0940999999999,
+        368.30310000000003,
+        345.5528499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_16"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Video Object detection and event detection.",
+      "bounding_box": [
+        217.5591,
+        351.4287999999999,
+        359.04495000000003,
+        371.6375499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_17"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Audio Event detection and classification.",
+      "bounding_box": [
+        217.5591,
+        378.26339999999993,
+        344.4771,
+        398.47214999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_18"
+    },
+    {
+      "page_number": 7,
+      "element_type": "paragraph",
+      "text": "Structured data Regression or classification for tabular data.",
+      "bounding_box": [
+        217.559,
+        404.34809999999993,
+        379.69542499999994,
+        423.80684999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_7_element_19"
+    },
+    {
+      "page_number": 8,
+      "element_type": "heading",
+      "text": "Selecting the approach",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        233.12199999999996,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_8_element_1"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Small amount of data",
+      "bounding_box": [
+        116.971,
+        108.02209999999997,
+        200.5105,
+        116.27209999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_2"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly unlabelled",
+      "bounding_box": [
+        106.2992,
+        138.91189999999995,
+        192.04970000000003,
+        158.41189999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_3"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Zero-shot learning Mostly ◼ Manual labelling unlabelled",
+      "bounding_box": [
+        39.9251,
+        165.20524999999992,
+        186.15404999999998,
+        197.32519999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_4"
+    },
+    {
+      "page_number": 8,
+      "element_type": "heading",
+      "text": "See Page 006",
+      "bounding_box": [
+        106.2992,
+        236.34504999999996,
+        170.18735,
+        246.83079999999995
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_8_element_5"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled",
+      "bounding_box": [
+        106.2992,
+        283.4787999999999,
+        192.04970000000003,
+        302.9787999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_6"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Traditional machine Mostly learning labelled ◼ Meta-learning\n\n• Knowledge reasoning",
+      "bounding_box": [
+        44.9912,
+        309.77214999999995,
+        197.53904999999997,
+        357.4414499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_7"
+    },
+    {
+      "page_number": 8,
+      "element_type": "heading",
+      "text": "See Page 008",
+      "bounding_box": [
+        106.2992,
+        380.91204999999997,
+        170.26935,
+        391.39779999999996
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_8_element_8"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Large amount of data",
+      "bounding_box": [
+        261.3688,
+        108.02209999999997,
+        345.24655000000007,
+        116.27209999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_9"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled",
+      "bounding_box": [
+        250.8661,
+        138.91189999999995,
+        336.95485,
+        158.41189999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_10"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Semi-supervised learning",
+      "bounding_box": [
+        250.8661,
+        165.20524999999992,
+        355.0997,
+        173.45524999999992
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_11"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Active learning",
+      "bounding_box": [
+        250.8661,
+        179.28984999999994,
+        317.61994999999996,
+        187.53984999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_12"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Unsupervised learning",
+      "bounding_box": [
+        250.8661,
+        193.37454999999994,
+        344.67087499999997,
+        201.62454999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_13"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Self-supervised learning",
+      "bounding_box": [
+        250.8661,
+        207.45914999999997,
+        350.421125,
+        215.70914999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_14"
+    },
+    {
+      "page_number": 8,
+      "element_type": "heading",
+      "text": "See Page 020",
+      "bounding_box": [
+        250.8661,
+        236.34504999999996,
+        314.539,
+        246.83079999999995
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_8_element_15"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly labelled",
+      "bounding_box": [
+        250.8661,
+        284.8614999999999,
+        336.95485,
+        304.3614999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_16"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "• Deep learning",
+      "bounding_box": [
+        250.8661,
+        311.15494999999993,
+        313.9982,
+        319.40494999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_17"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Model refinement",
+      "bounding_box": [
+        178.5827,
+        468.73079999999993,
+        246.96695,
+        476.98079999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_18"
+    },
+    {
+      "page_number": 8,
+      "element_type": "heading",
+      "text": "See Page 025",
+      "bounding_box": [
+        178.5827,
+        499.96804999999995,
+        241.22025000000002,
+        510.45379999999994
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_8_element_19"
+    },
+    {
+      "page_number": 8,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 005",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        386.67089999999996,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_8_element_20"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Small amount of data,",
+      "bounding_box": [
+        53.8583,
+        57.84809999999993,
+        277.6511,
+        78.84809999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_1"
+    },
+    {
+      "page_number": 9,
+      "element_type": "heading",
+      "text": "mostly unlabelled",
+      "bounding_box": [
+        53.8583,
+        82.84809999999993,
+        234.23569999999998,
+        103.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_9_element_2"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "For some Defence problems we may not have any labelled examples of the event or object of interest, but we may have unlabelled examples or information from other sources, such as text or semantic descriptions. This section considers approaches which leverage semantic descriptions of the event or object of interest to train the model.",
+      "bounding_box": [
+        39.685,
+        127.82334999999995,
+        379.69142500000015,
+        169.82334999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_3"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Whilst these approaches can be powerful for some problems, if there is unlabelled data available one would expect the best performance by manually labelling the data and considering the approaches for a small amount of data which is mostly labelled.",
+      "bounding_box": [
+        39.685,
+        184.07334999999995,
+        361.74685000000005,
+        214.82334999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_4"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly unlabelled",
+      "bounding_box": [
+        134.9738,
+        245.86534999999992,
+        285.9735500000001,
+        254.11534999999992
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_5"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Is there data available which could be labelled?",
+      "bounding_box": [
+        157.8796,
+        280.63404999999995,
+        263.06710000000004,
+        300.13404999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_6"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Yes No",
+      "bounding_box": [
+        112.019,
+        330.02759999999995,
+        307.92805000000004,
+        338.27759999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_7"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "Manually label the data Zero-shot learning and apply techniques See Page 007 for small amount of data, mostly labelled See Page 008",
+      "bounding_box": [
+        74.9522,
+        359.79445,
+        336.72124999999994,
+        415.49299999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_8"
+    },
+    {
+      "page_number": 9,
+      "element_type": "paragraph",
+      "text": "006 Machine Learning with Limited Data",
+      "bounding_box": [
+        34.029,
+        567.8872,
+        177.5491,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_9_element_9"
+    },
+    {
+      "page_number": 10,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly unlabelled\nZero-shot learning TRL: 2\nZero-shot learning looks to apply deep\nlearning techniques to problems where\nthere is no training data available. Instead\nzero-shot learning uses descriptions of\nconcepts to train the model.\nZero-shot learning approaches\nUser-defined attributes – Attributes Vehicle\ndefined by human experts or concept\nTank\nontology.\nRelative attributes – Measuring attributes 3D Gun Tracks Camouflage Metal\nrelative to other examples.\nAn image of a tank and corresponding\nData-driven attributes – Augmenting\nexample description.\nuser-defined approaches by learning\nfurther attributes from data.\nImplementations – Many of the recent\nConcept ontology – Combining\nzero-shot learning models have code\nembeddings of data and ontologies, such\navailable on GitHub.\nas WordNet, and leveraging the ontology\nPerformance – State-of-the-art zero-\nstructure to classify.\nshot learning approaches have achieved\nSemantic word embedding – Utilising\nover 80% accuracy on the Animals with\na semantic word vector space learned\nAttributes dataset (Lampert et al. 2009)\nfrom linguistic knowledge bases.\nand over 60% accuracy on the SUN scene\nunderstanding dataset (Xiao 2010). These\nMost zero-shot learning approaches take\nare both standard research datasets.\nan embedding approach, where the data\nis embedded into a vector space alongside\nan embedding of the attribute information.\nChallenges:\nExamples are then classified using the\n◼ Generating a suitably labelled\nmutual embeddings.\ntraining set. The labelling required\nis significantly more detailed than is\nDatatypes – Zero-shot learning is generally\navailable in most research datasets.\napplied to classification in image or video\ndatasets. Recently a few applications of zero-\nRequirements:\nshot learning for semantic segmentation\n◼ A large dataset with relevant\nand object detection have been published.\nattributes labelled for base training.\nMachine Learning with Limited Data 007",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_10_element_1"
+    },
+    {
+      "element_id": "page_10_element_2",
+      "page_number": 10,
+      "element_type": "image",
+      "text": "Image on PDF page 10; see the saved visual crop.",
+      "bounding_box": [
+        216.4903143,
+        106.6837372,
+        381.1830916,
+        171.08640379999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_10_image_01_216_107_381_171.png",
+      "ocr_text": "",
+      "description": ""
+    },
+    {
+      "element_id": "page_10_element_3",
+      "page_number": 10,
+      "element_type": "diagram",
+      "text": "Visible text: Vehicle\r\nTank\r\n30 | Gun | tracks | camouflage | metal",
+      "bounding_box": [
+        217.913,
+        184.25199999999995,
+        381.614,
+        233.14999999999998
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_10_diagram_02_218_184_382_233.png",
+      "ocr_text": "Vehicle\r\nTank\r\n30 | Gun | tracks | camouflage | metal",
+      "description": ""
+    },
+    {
+      "page_number": 11,
+      "element_type": "paragraph",
+      "text": "Small amount of data,\nmostly labelled\nDefence is typically interested in rare A number of approaches have been\nevents, whether that is to identify unusual developed to train machine learning models\nor unexpected objects, or events that have on small amounts of labelled data. In the\nnot previously occurred. In these scenarios absence of sufficient data to train classical\nwe may only have a small number of machine learning models in the problem of\nexamples of events or objects of interest, interest, these models look to utilise prior\nbut a large amount of data to find other experience learned from similar datasets with\nexamples of these events or objects in. large amounts of labelled data, or use human\nComputers are very effective at searching knowledge to reduce the training required.\nlarge amounts of data, so if we can apply\nmachine learning to problems with only Collecting and labelling more data,\na few examples, we can significantly if possible, is the best way to improve the\nreduce the load on analysts. accuracy achieved by machine learning\non limited data problems.\nSmall amount of data, mostly labelled\nIs there a large amount of data in a similar domain?\nYes No\nMeta-learning Could the class be\nSee Page 010 described semantically?\nYes No\nKnowledge enhanced machine learning Traditional machine learning\nSee Page 017 See Page 009\n008 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_11_element_1"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled",
+      "bounding_box": [
+        254.0364,
+        28.60579999999993,
+        381.2614,
+        35.60579999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_1"
+    },
+    {
+      "page_number": 12,
+      "element_type": "heading",
+      "text": "Traditional machine learning TRL: 6",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        367.26719999999995,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_12_element_2"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Whilst deep learning approaches are the state-of-the-art machine learning models, they require large amounts of data to be trained. Shallower neural networks and traditional machine learning require less data to train and can outperform deep neural networks in limited data scenarios.",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        195.196675,
+        183.73084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_3"
+    },
+    {
+      "page_number": 12,
+      "element_type": "heading",
+      "text": "Traditional machine learning",
+      "bounding_box": [
+        39.685,
+        197.8241,
+        177.83450000000005,
+        208.0741
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_12_element_4"
+    },
+    {
+      "page_number": 12,
+      "element_type": "heading",
+      "text": "approaches",
+      "bounding_box": [
+        39.685,
+        210.3241,
+        94.55324999999999,
+        220.5741
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_12_element_5"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Support Vector Machines – Learn a hyperplane to separate the space into two-regions for two-way classification. Kernels can be used to map the space in order to apply SVMs to problems which are not linearly-separable. k wor lnet eura eepn D e c n a alnetwork m allowneur r Sh o f r e P",
+      "bounding_box": [
+        39.685,
+        110.39865061999996,
+        371.22713995000004,
+        290.31544999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_6"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Traditional machine learning",
+      "bounding_box": [
+        293.6483,
+        185.57809999999995,
+        371.0897,
+        191.57809999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_7"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Data",
+      "bounding_box": [
+        293.6241,
+        220.19079999999997,
+        306.7881,
+        226.19079999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_8"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "A comparison of the performance of traditional machine learning and neural networks when training data is limited.",
+      "bounding_box": [
+        226.063,
+        236.66879999999998,
+        356.3946,
+        261.6688
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_9"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Performance – For simple problems, Decision Trees – Learning the structure and traditional machine learning approaches rules of a decision tree to classify examples. can achieve high accuracy. The training of Ensembles of decision trees, known as random forests, are often used to reduce the overfitting of decision trees. Multi-Layer Perceptrons – An artificial neural network approach consisting of multiple layers of perceptrons. A perceptron is a model of a neuron, which outputs a linear combination of the inputs. MLPs are then trained via backpropagation.",
+      "bounding_box": [
+        39.685,
+        282.45324999999997,
+        372.70694999999995,
+        416.90004999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_10"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Datatypes – Traditional machine learning methods generally take a vector input, so for the complex data structures of interest to Defence, such as imagery, feature extraction is generally required.",
+      "bounding_box": [
+        39.685,
+        431.15004999999996,
+        194.52049999999997,
+        484.40004999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_11"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Implementations – The Scikit-learn python library implements most traditional machine learning approaches. traditional machine learning approaches still needs a number of examples per class, typically hundreds.",
+      "bounding_box": [
+        39.685,
+        316.20324999999997,
+        374.73892500000005,
+        520.98475
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_12"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Challenges:\n\n• Suitable pre-processing to effectively train these models on complex datasets.",
+      "bounding_box": [
+        226.063,
+        376.65579999999994,
+        346.614275,
+        419.36454999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_13"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Requirements:\n\n• Hundreds of examples per class.",
+      "bounding_box": [
+        226.063,
+        433.65579999999994,
+        355.52509999999995,
+        453.86454999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_14"
+    },
+    {
+      "page_number": 12,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 009",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        386.9109,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_12_element_15"
+    },
+    {
+      "page_number": 13,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled\nMeta-learning TRL: 1-3\nThe goal of meta-learning is to learn to a new environment and generalise\nhow a machine learning model learns to unseen tasks.\nand leverage this to train the model\nmore quickly. A meta-learner is trained Meta-learning is a data driven approach,\non a number of similar learning tasks. so it requires a large number of tasks from\nThis allows it to learn the optimal way a similar dataset for meta-training. Once\nto learn an unseen task. For limited data the meta-model is trained, it can be applied\nproblems, meta-learning can be used to learn an unseen task with limited data.\nto learn how to train a task when given Meta-learning also supports life-long\nonly a few examples, rapidly adapt learning so the model can be improving\nas it is being used.\nTypes of Meta-learning\nLearning from memory\nAugmenting a neural network with an\nexternal memory source to remember\nexamples seen previously.\n0\n0*\n1\nLearning as optimisation\nExpressing meta-learning as an\n0* optimisation problem, either using a second\n3 0*\nnetwork to predict parameters or learning\n2\nan initialisation for the neural network.\nMeta-learning Task-learning\n010 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_13_element_1"
+    },
+    {
+      "element_id": "page_13_element_2",
+      "page_number": 13,
+      "element_type": "diagram",
+      "text": "Visible text: y=",
+      "bounding_box": [
+        49.314299999999996,
+        287.75879999999995,
+        193.7562,
+        368.0591999999999
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_13_diagram_01_49_288_194_368.png",
+      "ocr_text": "y=",
+      "description": ""
+    },
+    {
+      "page_number": 14,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled\nLearning to compare\nLeveraging similar features in the examples,\nthese approaches embed examples into a\nvector space and then use a metric to classify.\nLearning by task inference\nUsing prior knowledge of the structure of\nnaturally occurring tasks to improve model\nperformance.\nMachine Learning with Limited Data 011\nImages from icon8.com",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_14_element_1"
+    },
+    {
+      "element_id": "page_14_element_12",
+      "page_number": 14,
+      "element_type": "diagram",
+      "text": "Visible text: pend\r\nSo",
+      "bounding_box": [
+        60.1927,
+        108.66649999999993,
+        180.4809,
+        204.76529999999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_14_diagram_01_60_109_180_205.png",
+      "ocr_text": "pend\r\nSo",
+      "description": ""
+    },
+    {
+      "element_id": "page_14_element_13",
+      "page_number": 14,
+      "element_type": "diagram",
+      "text": "Visible text: Ah\r\n-\r\nfy",
+      "bounding_box": [
+        48.2216,
+        252.79679999999996,
+        110.2166,
+        339.58189999999996
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_14_diagram_02_48_253_110_340.png",
+      "ocr_text": "Ah\r\n-\r\nfy",
+      "description": ""
+    },
+    {
+      "page_number": 15,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled – Meta-learning\nFew-shot learning TRL: 3\nFew-shot learning is an approach to Learning to compare:\nclassification when there are a small ◼ Matching Networks (Vinyals et al. 2016).\nnumber of examples per class. Few-shot ◼ Prototypical Networks (Snell et al. 2017).\nlearning considers N-way k-shot problems,\n◼ Relation Networks (Sung et al. 2018)\nin which we have N classes and each class\nhas k labelled examples.\nLearning as optimisation:\n◼ MAML (Finn et al. 2017).\nFew-shot learning uses meta-learning\n◼ Meta Networks (Munkhdalai and Yu\nacross a range of classification tasks to\n2017).\nadapt rapidly to a new task. The meta-\nlearning model is trained on a large set of ◼ SNAIL (Mishra et al. 2018).\nN-way k-shot tasks from a similar dataset.\nDog\nCat\n?\nTiger\nTortoise\nLion\nA 5-way 4-shot problem.\n012 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_15_element_1"
+    },
+    {
+      "element_id": "page_15_element_2",
+      "page_number": 15,
+      "element_type": "image",
+      "text": "Visible text: Siig) pee\r\nWer 2h ee",
+      "bounding_box": [
+        90.9586487,
+        276.84829609999997,
+        242.5792205,
+        466.59007339999994
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_15_image_01_91_277_243_467.png",
+      "ocr_text": "Siig) pee\r\nWer 2h ee",
+      "description": ""
+    },
+    {
+      "element_id": "page_15_element_3",
+      "page_number": 15,
+      "element_type": "image",
+      "text": "Visible text: mS Ue\r\nre ntins 4",
+      "bounding_box": [
+        277.5005133,
+        328.9465220999999,
+        367.7243801,
+        414.93936879999995
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_15_image_02_278_329_368_415.png",
+      "ocr_text": "mS Ue\r\nre ntins 4",
+      "description": ""
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Datatypes – The approaches to few-shot learning from literature focus on image classification, with only a few examples considering other datasets, such as time-series. Many of the few-shot learning approaches for image classification could be adapted for other datasets by replacing the embedding neural network, or are model agnostic so could be applied to any model.",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        197.47449999999998,
+        217.48084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_1"
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Implementations – Most recent papers on few-shot learning have made their code available on GitHub. These implementations are typically specific to the datasets tested in the paper so require adapting to new datasets. Dstl have modified some of these models to apply to Defence and more general datasets.",
+      "bounding_box": [
+        39.685,
+        223.31544999999994,
+        203.28167499999998,
+        310.31544999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_2"
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Performance – On the miniImageNet dataset (Vinyals et al. 2016) the current best performing models achieving around 80% accuracy on 5-way 5-shot tasks and 60% accuracy on 5-way 1-shot tasks. Meta-learning – Small amount of data, mostly labelled",
+      "bounding_box": [
+        39.685,
+        28.570799999999963,
+        381.2614,
+        369.40004999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_3"
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Challenges:\n\n• Few-shot learning requires the task to be structured as a N-way k-shot problem.\n\n• Hyper-parameter optimisation can be difficult.",
+      "bounding_box": [
+        226.063,
+        116.52599999999995,
+        357.8296000000001,
+        183.30249999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_4"
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Requirements:\n\n• A large dataset from a similar distribution.\n\n• Access to high performance compute to train the meta-learner.",
+      "bounding_box": [
+        226.063,
+        197.52599999999995,
+        364.07952500000005,
+        252.23474999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_5"
+    },
+    {
+      "page_number": 16,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 013",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        385.43089999999995,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_16_element_6"
+    },
+    {
+      "page_number": 17,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled – Meta-learning\nFew-shot segmentation TRL: 2\nand object detection\nMany of the approaches to few-shot each of the N classes. In few-shot object\nlearning and meta-learning can also be detection we look to detect N classes of\napplied to image segmentation and object using k examples per class. These\nobject detection problems. problem structures mirror the N-way k-shot\nproblems used for few-shot classification.\nIn few-shot segmentation we look to\nclassify the pixels of the image into N\nclasses where we have k examples for\nAn example of segmentation and object detection\non overhead imagery (Tanner et al 2009).\n014 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_17_element_1"
+    },
+    {
+      "element_id": "page_17_element_2",
+      "page_number": 17,
+      "element_type": "image",
+      "text": "Image on PDF page 17; see the saved visual crop.",
+      "bounding_box": [
+        39.6849976,
+        238.40829369999994,
+        381.6141063,
+        439.28847129999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_17_image_01_40_238_382_439.png",
+      "ocr_text": "",
+      "description": ""
+    },
+    {
+      "page_number": 18,
+      "element_type": "paragraph",
+      "text": "Meta-learning – Small amount of data, mostly labelled\nDatatypes – Few-shot segmentation and\nobject detection have currently only been\napplied to research datasets such as PASCAL\nVOC (Everingham et al. 2010) and FSS-1000\n(Li et al. 2020).\nImplementations – Some of these\napproaches have code available on GitHub.\nAt Dstl we have implemented some\nof the base meta-learning techniques\nusing standard segmentation and object\ndetection models.\nPerformance – State-of-the-art few-shot\nShot in support set\nsegmentation and object detection models\ndemonstrate a significant improvement in The improvement in mean IOU compared to\nmean IOU (Intersection over Union) over fine-tuning (MetaSegNet from Tian et al 2020).\nfine-tuning approaches.\nChallenges:\n◼ Few-shot segmentation and object\ndetection are immature and have\nonly been applied to relatively\nsimple research datasets.\n◼ Segmentation models are complex\nwhich makes training meta-learners\ndifficult and computationally\nexpensive.\n◼ Hyper-parameter optimisation\ncan be difficult.\nRequirements:\n◼ A large dataset of similar problems.\n◼ Access to high performance\ncompute to train the meta-learner.\nMachine Learning with Limited Data 015\nmIoU (%)\n55 Fine-tuning\nMetaSegConv(baseline)\n50 MetaSegNet\n45\n40\n35\n30\n1 2 3 4 5",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_18_element_1"
+    },
+    {
+      "element_id": "page_18_element_2",
+      "page_number": 18,
+      "element_type": "diagram",
+      "text": "Visible text: —— Fine-tuning:\r\n—— Metasegconv{baseline}\r\n— Metasegnet\r\nce”",
+      "bounding_box": [
+        239.7402,
+        129.68569999999994,
+        381.2602,
+        247.32369999999992
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_18_diagram_01_240_130_381_247.png",
+      "ocr_text": "—— Fine-tuning:\r\n—— Metasegconv{baseline}\r\n— Metasegnet\r\nce”",
+      "description": ""
+    },
+    {
+      "page_number": 19,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled – Meta-learning\nMeta-reinforcement learning TRL: 2\nIn reinforcement learning, limited data\nproblems occur when a model is required\nto adapt quickly to a new scenario or\nreinforcement learning is used to train Environment\na real-world agent, such as a robot, and\nextensive training is not possible. Meta-\nlearning is able to train reinforcement Interpreter n\nReward o\nlearning models to adapt rapidly to new Acti\nenvironments.\nA common approach to meta- State\nreinforcement learning is learning an\ninitial state of the agent, such that it can\nbe updated in a few training runs. This\nAgent\napproach was introduced in the MAML\nThe reinforcement learning process.\nmodel (Finn et al. 2017) and there has\nbeen a large number of papers developing\nmeta-reinforcement learning recently. Performance – Meta-reinforcement\nlearning has been able to learn research\nMeta-reinforcement learning can also tasks in a few simulated runs where classical\nhelp to train real-world agents through reinforcement learning approaches require\nsimulation, such that they can better thousands of runs.\nhandle the uncertainty present in the\nreal-world. This has recently been applied\nto train a robot hand to solve a Rubik’s\nChallenges:\ncube through simulation (Akkaya et\n◼ Meta-reinforcement learning has\nal. 2019).\nonly been applied to bounded\nchallenges, such as research\nDatatypes – Meta-reinforcement learning\ndatasets and simple robots.\ncan be applied to any reinforcement\nlearning environment where there are a\nRequirements:\nlarge number of similar tasks to the target\ntask, or where the agent needs to adapt ◼ A task where the goal can be\nquickly to the environment. randomly generated.\n◼ Access to high performance\nImplementations – Many of the recent\ncompute to train the meta-learner.\nmeta-reinforcement learning models have\ncode available on GitHub.\n016 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_19_element_1"
+    },
+    {
+      "element_id": "page_19_element_2",
+      "page_number": 19,
+      "element_type": "image",
+      "text": "Visible text: [OO]\r\nCa\r\n7 m",
+      "bounding_box": [
+        276.5196838,
+        209.35520569999994,
+        324.2491611,
+        256.23841849999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_19_image_01_277_209_324_256.png",
+      "ocr_text": "[OO]\r\nCa\r\n7 m",
+      "description": ""
+    },
+    {
+      "element_id": "page_19_element_3",
+      "page_number": 19,
+      "element_type": "image",
+      "text": "Visible text: a)\r\nNX",
+      "bounding_box": [
+        224.4603424,
+        166.14832969999992,
+        266.3776642,
+        213.10833689999993
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_19_image_02_224_166_266_213.png",
+      "ocr_text": "a)\r\nNX",
+      "description": ""
+    },
+    {
+      "element_id": "page_19_element_4",
+      "page_number": 19,
+      "element_type": "image",
+      "text": "Visible text: ca",
+      "bounding_box": [
+        283.1931458,
+        106.84976099999994,
+        316.6299167,
+        140.28653189999994
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_19_image_03_283_107_317_140.png",
+      "ocr_text": "ca",
+      "description": ""
+    },
+    {
+      "element_id": "page_19_element_5",
+      "page_number": 19,
+      "element_type": "diagram",
+      "text": "Visible text: Reward o Ac te",
+      "bounding_box": [
+        238.1114,
+        107.71699999999993,
+        363.5651,
+        256.23799999999994
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_19_diagram_04_238_108_364_256.png",
+      "ocr_text": "Reward o Ac te",
+      "description": ""
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled",
+      "bounding_box": [
+        254.0364,
+        28.60579999999993,
+        381.2614,
+        35.60579999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_1"
+    },
+    {
+      "page_number": 20,
+      "element_type": "heading",
+      "text": "Knowledge enhanced TRL: 1-4",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        371.23369999999994,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_20_element_2"
+    },
+    {
+      "page_number": 20,
+      "element_type": "heading",
+      "text": "machine learning",
+      "bounding_box": [
+        39.685,
+        79.3590999999999,
+        184.88199999999995,
+        97.35909999999996
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_20_element_3"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "Machine learning is heavily dependent on the availability of data. Knowledge enhanced machine learning looks to use the innate human ability to learn with limited data and reason over the data available. These approaches therefore look to combine human knowledge, expressed in a structured manner, with the available training data to produce a machine learning model which can be trained with limited data.",
+      "bounding_box": [
+        39.685,
+        129.94934999999992,
+        197.24349999999998,
+        250.69934999999992
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_4"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "Ontological approaches are an effective way of representing and reasoning over knowledge, but are not able to learn new objects. On the other hand machine learning has proved effective at learning new objects, but requires a large amount of training data and does not allow explainability and the injection of human knowledge to improve prediction. The approaches to knowledge enhanced machine learning look to bridge these two fields, by allowing human knowledge to be represented and utilised by the machine learning model and reducing the amount of training data required. Zero-shot learning (considered in section “Small amount of data, mostly unlabelled”) uses some of the knowledge enhanced embedding approaches to train a classifier using only a semantic description. In this section we instead look at augmenting the training data with expert knowledge.",
+      "bounding_box": [
+        39.685,
+        129.94934999999992,
+        377.4853500000001,
+        430.69935
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_5"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "Approaches\n\n• Symbolic models – Fusing a representation of contextual knowledge into machine learning algorithms to improve algorithm performance.",
+      "bounding_box": [
+        217.5591,
+        218.54259999999994,
+        377.472675,
+        276.03394999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_6"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "• Hierarchical learning – Using a taxonomy representing the relationship between objects and higher level classes.",
+      "bounding_box": [
+        217.5591,
+        281.86864999999995,
+        380.24385,
+        312.61864999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_7"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "• Zero-shot learning – Leveraging descriptions of objects in terms of known attributes when there are no examples available for training. This was considered in the section on problems with a small amount of data, mostly unlabelled.",
+      "bounding_box": [
+        217.5591,
+        318.45324999999997,
+        377.33985,
+        394.2032499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_8"
+    },
+    {
+      "page_number": 20,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 017",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        385.12600000000003,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_20_element_9"
+    },
+    {
+      "page_number": 21,
+      "element_type": "paragraph",
+      "text": "Small amount of data, mostly labelled – Knowledge enhanced machine learning\nSymbolic models TRL: 1\nAs humans, we use our understanding of\nthe world to help us perform limited data\nlearning tasks. This could be identifying\nknown features of the class of interest,\nor decomposing it into common parts.\nSome zero-shot learning approaches\nuse attributes to classify unseen classes,\ngiven only a description in terms of these\nattributes. Symbolic models look to exploit\nsimilar approaches when there is some\ntraining data available. An example of a decomposition of a Foxhound\nvehicle into its constituent parts.\nSymbolic model machine learning\nalgorithms use some representation of Implementations – Symbolic models\nknowledge, generally human curated, for machine learning are a very low\nsuch as ontology, database or contextual TRL technique so there are only a few\ninformation. One can consider a traditional implementations available on GitHub.\nmachine learning algorithm as learning\na representation of the features in the\nclasses, this approach looks to reduce the Challenges:\namount of data by introducing a human ◼ This is a very low TRL technique with\nconstructed representation. significant research required before\nsymbolic model approaches can\nDatatypes – Symbolic models could in be effectively applied to real-world\ntheory be applied to any machine learning problems.\nmodel. In most research to date, these\nmodels have been applied to image Requirements:\nclassification problems. The knowledge\n◼ A representation of knowledge,\nrepresentation could be a common\ngenerated by the operator or from\nontology (e.g. WordNet (Miller 1998)),\na common ontology or taxonomy,\na database of object specifications (e.g.\nthat can effectively describe the\nJanes.com) or a custom representation\nclasses.\ncurated for the task by a human operator.\n◼ Training data in a similar domain\nto train the model to use the\nrepresentation.\n018 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_21_element_1"
+    },
+    {
+      "element_id": "page_21_element_2",
+      "page_number": 21,
+      "element_type": "image",
+      "text": "Visible text: Seine —s",
+      "bounding_box": [
+        217.5590515,
+        107.71694849999994,
+        381.2598339,
+        216.85081059999993
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_21_image_01_218_108_381_217.png",
+      "ocr_text": "Seine —s",
+      "description": ""
+    },
+    {
+      "page_number": 22,
+      "element_type": "paragraph",
+      "text": "Knowledge enhanced machine learning – Small amount of data, mostly labelled\nHierarchical learning TRL: 2-4\nAs humans we categorise objects in\nMilitary aircraft\nhierarchical taxonomies. For example\na tank is a type of vehicle, and a\nChallenger 2 is a type of tank. For Fixed wing Rotary wing\naircraft aircraft\nlimited data problems, we can exploit\nthis hierarchical taxonomy to train\nclassifiers for the higher level classes, Bomber Fighter Reconnaissance\naircraft aircraft aircraft\nwhich have more data available.\nHierarchical learning also gives a way Typhoon F-22 F-35\nto manage the uncertainty inherent in\nlimited data problems, by being able to A hierarchy for\nmilitary aircraft.\nexpress confidence in higher level classes,\nwhile having less confidence in the lower\nlevel classes. For example with hierarchical Implementations – Hierarchical\nlearning we can express that an object is learning can be easily implemented for\na tank, but the model is uncertain about the simple hierarchy by training different\nwhat model of tank. models for each layer in the taxonomy.\nThe poly-hierarchical and ontological\nIn fact this hierarchy is a simplification of approaches to learning are less developed\nthe way humans understand taxonomies and more of an academic topic. There\nand poly-hierarchy gives a more accurate are some implementations on GitHub\nrepresentation. For example a tank is a accompanying recent papers on the topic.\nmilitary vehicle, but is also a tracked vehicle\nand an armoured vehicle. These classes\nare distinct, but overlapping so cannot\nbe represented in a standard hierarchy. Challenges:\nOntology is a common way of expressing ◼ Hierarchical learning requires the\nsemantic poly-hierarchies which could be training of many different models for\nexploited by hierarchical learning. different levels of the hierarchy.\nDatatypes – Hierarchical learning is Requirements:\ntypically applied to classification problems, ◼ A (poly-)hierarchical taxonomy to\nwith most examples using imagery describe the objects of interest.\ndatasets. ◼ Data for other classes within the\ntaxonomy.\nMachine Learning with Limited Data 019",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_22_element_1"
+    },
+    {
+      "element_id": "page_22_element_2",
+      "page_number": 22,
+      "element_type": "chart",
+      "text": "Visible text: Military aircraft aircraft aircraft aircraft aircraft aircraft",
+      "bounding_box": [
+        217.559,
+        107.71699999999998,
+        381.26,
+        215.71699999999993
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_22_chart_01_218_108_381_216.png",
+      "ocr_text": "Military aircraft aircraft aircraft aircraft aircraft aircraft",
+      "description": ""
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Large amount of data,",
+      "bounding_box": [
+        53.8583,
+        57.84809999999993,
+        278.41970000000003,
+        78.84809999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_1"
+    },
+    {
+      "page_number": 23,
+      "element_type": "heading",
+      "text": "mostly unlabelled",
+      "bounding_box": [
+        53.8583,
+        82.84809999999993,
+        234.23569999999998,
+        103.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_23_element_2"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Defence has access to large amounts of data, but most of this does not have suitable labelling for applying machine learning. To be able to apply machine learning to this data, human labelling is required. Human labelling of data is a time consuming and expensive process. To apply machine learning to such problems, inherent features in the data can be used to classify the examples through semi, self and unsupervised learning. The human labelling of data can also be made more efficient by selecting the most informative examples through active learning.",
+      "bounding_box": [
+        39.685,
+        127.82334999999995,
+        377.9547749999999,
+        214.82334999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_3"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled",
+      "bounding_box": [
+        134.7592,
+        245.86534999999992,
+        286.1871250000001,
+        254.11534999999992
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_4"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Is any of the data labelled?",
+      "bounding_box": [
+        160.6269,
+        282.36144999999993,
+        260.3199,
+        290.61144999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_5"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Yes",
+      "bounding_box": [
+        114.9689,
+        322.23229999999995,
+        127.39340000000001,
+        330.48229999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_6"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Could more examples be labelled?",
+      "bounding_box": [
+        81.0041,
+        351.29044999999996,
+        161.35909999999998,
+        370.79044999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_7"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "No Yes",
+      "bounding_box": [
+        71.9203,
+        400.6832999999999,
+        171.18869999999998,
+        408.9332999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_8"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Semi-supervised Active learning learning See Page 21 See Page 22",
+      "bounding_box": [
+        46.4358,
+        430.49434999999994,
+        188.51450000000003,
+        462.85139999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_9"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "020 Machine Learning with Limited Data No",
+      "bounding_box": [
+        34.164,
+        322.23229999999995,
+        305.22945000000004,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_10"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Is there a relevant self-supervised objective?",
+      "bounding_box": [
+        252.7272,
+        351.29044999999996,
+        346.80030000000005,
+        370.79044999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_11"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "No Yes",
+      "bounding_box": [
+        250.503,
+        400.6832999999999,
+        349.77139999999997,
+        408.9332999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_12"
+    },
+    {
+      "page_number": 23,
+      "element_type": "paragraph",
+      "text": "Unsupervised Self-supervised learning learning See Page 23 See Page 24",
+      "bounding_box": [
+        230.2324,
+        430.49434999999994,
+        372.17037500000004,
+        462.85139999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_23_element_13"
+    },
+    {
+      "page_number": 24,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled\nSemi-supervised learning TRL: 5\nSemi-supervised learning looks to\nutilise both labelled and unlabelled data\nto train machine learning models. For\nsemi-supervised learning to be effective,\nthe data must satisfy one of the following\nassumptions:\n◼ Data points that are close to each other\nare more likely to share a label.\n◼ The data forms clusters and points in\nthe same cluster are more likely to share\na label.\n◼ The data points lie approximately on\na manifold of much lower dimension\nthan the input space.\nThe influence of unlabelled examples\nin training.\nIf one of these assumptions are satisfied,\na semi-supervised algorithm can assign\na label to unlabelled examples using their\nlabelled, semi-supervised approaches\nproximity to known labelled examples.\ncan achieve an accuracy close to this\nThis produces extra labelled data for the\nperformance with a fraction of the labelled\nmachine learning model to be trained on.\ndata. Semi-supervised will not always\nimprove the performance over using just\nDatatypes – Semi-supervised learning\nthe labelled examples, such as when neither\ncan be applied to any datatype, as long\nof the assumptions above hold.\nas there is a suitable embedding into\na vector space which satisfies one of the\nassumptions above.\nImplementations – The Scikit-learn python Challenges:\nlibrary implements an approach to label ◼ Semi-supervised learning will not\npropagation for semi-supervised learning. perform as well as if all data points\nFor more complex approaches, many of the were labelled.\nsemi-supervised papers in literature have\naccompanying code available on GitHub. Requirements:\nPerformance – Although semi-supervised ◼ The data must satisfy one of the\nlearning approaches will not perform as assumptions listed above.\nwell as if the whole dataset was human\nMachine Learning with Limited Data 021\n0.3\nAS-YB\nCC\nrednu\ndesnecil\n/ nirehceT",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_24_element_1"
+    },
+    {
+      "element_id": "page_24_element_2",
+      "page_number": 24,
+      "element_type": "diagram",
+      "text": "Visible text: '\r\n'\r\nole\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\nt\r\nwf ° Oe\r\nof",
+      "bounding_box": [
+        237.8307,
+        108.21739999999994,
+        360.9877,
+        260.28749999999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_24_diagram_01_238_108_361_260.png",
+      "ocr_text": "'\r\n'\r\nole\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\n'\r\n\r\nt\r\nwf ° Oe\r\nof",
+      "description": ""
+    },
+    {
+      "page_number": 25,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled\nActive learning TRL: 3\nActive learning looks to reduce the amount\nof data required for human labelling. An\nactive learning model uses a query strategy\nto select examples for a human operator\nto label, with the aim of selecting the most\ninformative examples.\nTypes of query strategy\n◼ Uncertainty\n◼ Query-by-committee\nNumber of samples\n◼ Expected model change\nThe improvement in accuracy that active\n◼ Expected error or variance minimisation\nlearning can bring over arbitrary data\n◼ Information gain labelling.\n◼ Meta-learning\nimplemented in these libraries but have\nGiven a small number of seed labelled\ncode available on GitHub.\nexamples, a machine learning model is\ntrained initially on these examples. The Performance – Active learning has been\nquery strategy is then used to select shown to improve the rate of training for\nunlabelled examples for human labelling. a number of academic datasets. Active\nOnce these have been labelled, the machine learning has also been applied effectively to\nlearning model is updated using the new remote sensing problems.\nlabelled examples and this process is\nrepeated to train the model.\nChallenges:\nDatatypes – Active learning is a training ◼ For deep models or complex\nstrategy rather than a model, so can be datasets, hyper-parameter\napplied to any machine learning model. refinement is required for active\nActive learning has been applied to learning to outperform arbitrary\nclassification, detection, segmentation and labelling.\nregression problems.\nImplementations – There are a number Requirements:\nof open source python libraries (ModAl, ◼ A human operator to label\nLibact, AliPy) implementing active learning the selected examples for the\nframeworks with common query strategies. algorithm.\nMany recent developments are not\n022 Machine Learning with Limited Data\nTest accuracy\n1.0\n0.9\n0.8\n0.7\n0.6 Active learning\nBaseline\n0.5\n100 125 150 175 200 225 250 275 300",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_25_element_1"
+    },
+    {
+      "page_number": 26,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled\nUnsupervised learning TRL: 5\nUnsupervised learning is a machine learning\napproach which looks to learn patterns\nin data without labels. The unsupervised\nlearning models therefore have to learn the\nstructure of the input data based on features.\nOften the characteristic features of a\ndataset are not obvious from the raw data,\nand therefore performing feature extraction\non the input data can significantly improve\nthe performance of some unsupervised Unsupervised dimension reduction\nlearning approaches. and clustering on the MNIST dataset\n(LeCun et al. 1998).\nUnsupervised learning approaches\nClustering – Clustering techniques look Implementations – The Scikit-learn python\nto group data points based on features in library implements many unsupervised\nthe data. learning algorithms.\nAnomaly detection – Anomaly detection Performance – Unsupervised learning\ntechniques look to identify whether a data approaches perform significantly worse\npoint lies in the same distribution as the than supervised and semi-supervised\nexisting examples. approaches because the algorithm does not\nNeural network – Neural network know the goal it is being tested against in\napproaches look to embed the data in a unsupervised learning.\nlower dimensional space, whilst retaining\nthe characteristic properties. Manifold\nlearning is one of the main unsupervised\nChallenges:\nneural network approaches.\nLatent variables – These are techniques for ◼ Unsupervised learning approaches\nreducing complexity of the data by learning perform significantly worse than\nlatent variables. This includes Principal supervised learning approaches.\nComponent Analysis and the Method of\nMoments. Requirements:\n◼ Feature extractor for data.\nDatatypes – Unsupervised learning can be ◼ Human interaction with the\napplied to any dataset. Some unsupervised algorithms to ensure the outputs\nlearning approaches, such as clustering, are relevant to the problem of\nbenefit from pre-processing the data with interest.\na feature extractor.\nMachine Learning with Limited Data 023",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_26_element_1"
+    },
+    {
+      "element_id": "page_26_element_2",
+      "page_number": 26,
+      "element_type": "image",
+      "text": "Image on PDF page 26; see the saved visual crop.",
+      "bounding_box": [
+        238.1442819,
+        106.69474109999993,
+        360.6201728,
+        199.07209859999995
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_26_image_01_238_107_361_199.png",
+      "ocr_text": "",
+      "description": ""
+    },
+    {
+      "page_number": 27,
+      "element_type": "paragraph",
+      "text": "Large amount of data, mostly unlabelled\nSelf-supervised learning TRL: 1\nSelf-supervised learning is a type of\nunsupervised learning where the data is 1 2 3\nautonomously labelled to provide the\nsupervision. Self-supervised learning uses\nlearning objectives in a special form to\n5\n4\npredict only a subset of information using\nthe rest.\n6 7 8\nBy training with the self-supervised learning\nobjective, the model will learn a good\nrepresentation of the dataset which can\nbe used for other tasks. The self-supervised\ntask therefore doesn’t need to be related X = ( , ); Y = 3\nto the task we want to train against.\nSelf-supervised tasks\nA relative positional self-supervised learning\n◼ Relative position in images objective (Doersch et al. 2015).\n(Doersch et al. 2015).\n◼ Image patch prediction\nImplementations – Self-supervised learning\n(Pathak et al 2016).\nis a very low TRL technique and therefore\n◼ Pixel colour from monochrome input\nthere are only a few implementations\n(Zhang et al. 2016).\navailable on GitHub.\n◼ Video frame sequence ordering\n(Misra et al. 2016).\n◼ Audio-Visual co-supervision\nChallenges:\n(Relja and Zisserman, 2018).\n◼ Self-supervised learning is a very\n◼ Prediction of next word in a sentence\nlow TRL technique so has not been\n(Zhenzhong Lan, et al 2019).\napplied to real-world datasets or\nproblems.\nDatatypes – Self-supervised learning has\nmainly been applied to image, video and\nRequirements:\ntext datasets. It could be applied to any\n◼ A large amount of unlabelled data.\ndataset given a suitable self-supervised\n◼ A relevant self-supervised learning\nlearning objective.\nobjective.\n024 Machine Learning with Limited Data",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_27_element_1"
+    },
+    {
+      "element_id": "page_27_element_2",
+      "page_number": 27,
+      "element_type": "image",
+      "text": "Visible text: 1 3 5 4 6 7 8",
+      "bounding_box": [
+        216.4715169,
+        106.603745,
+        382.3164703,
+        215.68378639999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_27_image_01_216_107_382_216.png",
+      "ocr_text": "1 3 5 4 6 7 8",
+      "description": ""
+    },
+    {
+      "element_id": "page_27_element_4",
+      "page_number": 27,
+      "element_type": "image",
+      "text": "Visible text: ae",
+      "bounding_box": [
+        259.0359483,
+        239.9886886,
+        288.1260054,
+        268.9606019
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_27_image_03_259_240_288_269.png",
+      "ocr_text": "ae",
+      "description": ""
+    },
+    {
+      "element_id": "page_27_element_3",
+      "page_number": 27,
+      "element_type": "image",
+      "text": "Image on PDF page 27; see the saved visual crop.",
+      "bounding_box": [
+        294.3628559,
+        240.0010951,
+        323.452913,
+        268.97300839999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_27_image_02_294_240_323_269.png",
+      "ocr_text": "",
+      "description": ""
+    },
+    {
+      "page_number": 28,
+      "element_type": "heading",
+      "text": "Model",
+      "bounding_box": [
+        53.8583,
+        57.84809999999993,
+        115.3673,
+        78.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_28_element_1"
+    },
+    {
+      "page_number": 28,
+      "element_type": "heading",
+      "text": "refinement",
+      "bounding_box": [
+        53.8583,
+        82.84809999999993,
+        165.02600000000004,
+        103.84809999999993
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_28_element_2"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "Whilst the approaches to learning with limited data presented in this guide improve on classical approaches to machine learning, these models cannot achieve the accuracy of a deep neural network trained with a large amount of data. There are a number of model refinement techniques which could improve the accuracy and allow effective deployment of limited data machine learning models. Whilst all of these techniques are not specific to machine learning with limited data, they are likely to be particularly powerful and relevant to limited data problems. Approaches\n\n• Transfer learning – Using datasets with a similar distribution to initially train the dataset, or pretrained models, then fine tune on the dataset of interest.",
+      "bounding_box": [
+        39.685,
+        127.93859999999995,
+        378.94860000000006,
+        294.28204999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_3"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "• Uncertainty – Modelling the uncertainty in the problem to know when the model can be trusted.",
+      "bounding_box": [
+        217.5591,
+        191.26464999999996,
+        380.67972499999996,
+        222.01464999999996
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_4"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "• Context injection – Using contextual information to improve the performance of machine learning models.",
+      "bounding_box": [
+        217.5591,
+        227.84924999999993,
+        380.540125,
+        258.5992499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_5"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "• Data augmentation – Generating more data through transformations on the existing dataset.",
+      "bounding_box": [
+        217.5591,
+        264.4339499999999,
+        376.562525,
+        295.1839499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_6"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "• Generated data – Generating more data for use in training.",
+      "bounding_box": [
+        217.5591,
+        301.01854999999995,
+        379.93707500000005,
+        320.51854999999995
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_7"
+    },
+    {
+      "page_number": 28,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 025",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        386.2009,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_28_element_8"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "Model refinement",
+      "bounding_box": [
+        39.685,
+        28.60579999999993,
+        98.75799999999998,
+        35.60579999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_1"
+    },
+    {
+      "page_number": 29,
+      "element_type": "heading",
+      "text": "Transfer learning",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        182.02900000000005,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_29_element_2"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "When training machine learning models, part of the training effort is to learn how to extract features from the data. For problems on similar datasets, the feature extraction part of the neural network will be very similar. Transfer learning looks to reduce the amount of training data required to learn a task, by reusing the feature extraction layers learned on other datasets. Transfer learning can be used in conjunction with the approaches to learning with limited data to boost the performance of these models.",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        194.71075000000002,
+        251.23084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_3"
+    },
+    {
+      "page_number": 29,
+      "element_type": "heading",
+      "text": "TRL: 3-6",
+      "bounding_box": [
+        333.8657,
+        60.14489999999989,
+        371.9627,
+        70.1448999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_29_element_4"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "One type of transfer learning which has been well studied is that of Domain Adaptation. Domain adaptation refers to transfer learning when the sample and label spaces are unchanged, but the examples come from different probability distributions. In Defence, we may be able to train a vehicle classifier using imagery from a ground based camera, and use domain adaptation to transfer this classifier to overhead imagery.",
+      "bounding_box": [
+        217.5591,
+        107.98084999999998,
+        379.76234999999997,
+        228.73084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_5"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "Performance – Transfer learning has been demonstrated to be an effective approach One approach to transfer learning is to take to improving performance of machine a deep learning model trained on a large dataset, with a similar distribution to the learning models on limited data problems when there is a large dataset available problem of interest and fine tune or replace which is similar to the task problem. For and train the final few layers of the neural some problems, transfer learning can network on the new problem. It is generally outperform limited data machine learning understood that the first layers of a neural network are performing general feature extraction and the final layers are problem specific. The number of layers to fine-tune or retrain is generally chosen by heuristics and guesswork. There has been an effort to quantify the generality of layers for transfer learning (including Yosinski et al. 2014).",
+      "bounding_box": [
+        39.685,
+        242.98084999999998,
+        374.88577499999997,
+        419.9808499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_6"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "026 Machine Learning with Limited Data approaches, such as few-shot learning.",
+      "bounding_box": [
+        34.499,
+        332.98085,
+        360.58109999999994,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_7"
+    },
+    {
+      "page_number": 29,
+      "element_type": "paragraph",
+      "text": "Implementations – Transfer learning can be easily applied in most machine learning libraries. A number of pre-trained models have been released to allow transfer learning such as Google’s Big Transfer model (Kolesnikov et al. 2019).",
+      "bounding_box": [
+        217.5591,
+        347.06544999999994,
+        375.92609999999996,
+        411.56544999999994
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_29_element_8"
+    },
+    {
+      "page_number": 30,
+      "element_type": "paragraph",
+      "text": "Model refinement\nUncertainty TRL: 3\nIn machine learning there are many sources Dropout as Bayesian approximation\nof uncertainty, but classical machine – Training Bayesian neural networks is\nlearning does not model the uncertainty difficult and deep networks can become\nin the model. The uncertainty in machine intractable. Instead Bayesian neural\nlearning can be split into two types: networks can be approximated using\nAleatoric uncertainty – The inherent dropout (Gal 2016).\nvariation in a physical system or\nenvironment. Otherwise known as statistical\nor stochastic uncertainty.\nEpistemic uncertainty – The uncertainty\ndue to a lack of knowledge of the system or\nenvironment. 1\n7\nFor limited data problems, the epistemic\nuncertainty will be high. To be able to\neffectively apply limited data machine\nlearning approaches to real-world problems,\napproaches to handle the uncertainty need\nto be considered.\nConfidence estimation – A softmax layer\nwill turn the output of the neural network\ninto a probability distribution. This gives\na representation of the uncertainty of the\nprediction.\nDirichlet loss – Learning an uncertainty\nmeasure through a loss function based on\nthe Dirichlet distribution (Sensoy et al 2018).\nBayesian machine learning – Bayesian\nneural networks take distributions for\nthe weights, rather than values used in Prediction of a neural network as a digit 1 is\nrotated, and the Dirichelt loss uncertainty\nstandard neural networks. This allows the\n(BAE, 2019).\nneural network to represent and learn the\nuncertainty in prediction. Bayesian neural\nnetworks are trained using Bayes theorem.\nMachine Learning with Limited Data 027\nClassification probability\n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n0 20 40 60 80 100 120 140 160 180\nRotation degree\n1\nuncertainty\nClassification probability\n1.0\n0.8\n0.6\n0.4\n0.2\n0 20 40 60 80 100 120 140 160 180\nRotation degree",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_30_element_1"
+    },
+    {
+      "element_id": "page_30_element_2",
+      "page_number": 30,
+      "element_type": "chart",
+      "text": "Visible text: i t 0.4 7",
+      "bounding_box": [
+        239.8943,
+        193.25399999999996,
+        376.64860000000004,
+        285.09569999999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_30_chart_01_240_193_377_285.png",
+      "ocr_text": "i t 0.4 7",
+      "description": ""
+    },
+    {
+      "element_id": "page_30_element_3",
+      "page_number": 30,
+      "element_type": "chart",
+      "text": "Visible text: a c 0.4 uncertainty",
+      "bounding_box": [
+        239.8943,
+        335.0574,
+        376.649,
+        425.90909999999997
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_30_chart_02_240_335_377_426.png",
+      "ocr_text": "a c 0.4 uncertainty",
+      "description": ""
+    },
+    {
+      "page_number": 31,
+      "element_type": "paragraph",
+      "text": "Model refinement\nContext injection TRL: 3\nIn many machine learning problems, there\nis metadata or contextual information\navailable. With typical machine learning\nmodels, this context is thrown away, but\nincorporating this metadata or context into\nthe machine learning model can improve\nthe accuracy of the model on the problem\nof interest. Context injection approaches\nlook to augment typical machine learning\nmodels with the contextual information.\nExamples of contextual\ninformation\nTemporal information – Time of day,\nSeason.\nSpatial information – Region, Latitude An example of off-nadir imagery from\nthe SpaceNet-4 dataset (SpaceNet 2018).\nand Longitude.\nCollection information – Nadir angle.\nImplementations – There are a number\nThere are a number of different ways of context injection models available on\ncontext can be included in a machine GitHub from recent papers and successful\nlearning model. Including context in a contestants in the SpaceNet 4 challenge.\nmachine learning model can be trained\nPerformance – Context injection has been\nfrom scratch, with end-to-end approaches,\ndemonstrated to improve the performance\nor can augment an already trained model\non a number of problems. For overhead\nby combining the prediction and context\nimagery, a model including the nadir angle\ndistributions to make a final prediction.\nas context achieved the best performance\non the SpaceNet 4 challenge. We have\nDatatypes – Context injection has\ndemonstrated up to 7x improvement in\nlargely been applied to imagery data for\nclassification accuracy by including context\nclassification or detection problems. At Dstl\nin an audio classification problem.\nwe have done research to demonstrate that\ncontext injection can also be effectively\napplied to audio classification.\n028 Machine Learning with Limited Data\n0.4\nAS-YB\nCC\nrednu\ndesnecil\n/srentraP\nteNecapS\nyb\ntesataD\nteNecapS\nehT",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_31_element_1"
+    },
+    {
+      "element_id": "page_31_element_2",
+      "page_number": 31,
+      "element_type": "image",
+      "text": "Visible text: bias Mt Fe",
+      "bounding_box": [
+        216.9221497,
+        107.71694849999994,
+        382.2510506,
+        270.85897499999993
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_31_image_01_217_108_382_271.png",
+      "ocr_text": "bias Mt Fe",
+      "description": ""
+    },
+    {
+      "page_number": 32,
+      "element_type": "paragraph",
+      "text": "Model refinement\nData augmentation TRL: 2-6\nData augmentation is a technique widely applied more carefully in order to avoid\nemployed in machine learning, not just reinforcing the biases in the limited amount\nfor limited data problems, to increase the of data.\nvariation in the dataset. Data augmentation Implementations – There are a number\nexploits invariances in the dataset to of common implementations of simple\ngenerate new examples from the available transformations. The standard machine\ndataset. learning libraries like TensorFlow and\nPyTorch have simple augmentations built\nFor larger datasets, simple transformations in, and a wider range of transformations\nsuch as reflection, rotation and translation are available in python libraries such\nare effective. There are also more complex as ImgAug. For the deep learning\napproaches to data augmentation such approaches, many of the models have\nas Generative Adversarial Networks and GitHub repositories containing code for\nStyle Transfer Networks. In the limited data the approaches.\nscenario, data augmentation needs to be\nImage data\naugmentation\nBasic image Deep learning\nmanipulations approaches\nKernel Colour space\nfilters transformations\nRandom\nerasing\nGeometric Mixing Adversarial Neural style GAN data\ntransformations images training transfer augmentation\nA taxonomy of data augmentation approaches from (Shorten and Khoshgoftaar, 2019).\nMachine Learning with Limited Data 029",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_32_element_1"
+    },
+    {
+      "element_id": "page_32_element_2",
+      "page_number": 32,
+      "element_type": "diagram",
+      "text": "Visible text: Image data augmentation Basic image Deep learning manipulations approaches Kernel Colour space filters transformations Random erasing Geometric Mixing Adversarial Neural style GAN data transformations images training transfer augmentation",
+      "bounding_box": [
+        39.685,
+        300.47299999999996,
+        381.26,
+        485.09299999999996
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_32_diagram_01_40_300_381_485.png",
+      "ocr_text": "Image data augmentation Basic image Deep learning manipulations approaches Kernel Colour space filters transformations Random erasing Geometric Mixing Adversarial Neural style GAN data transformations images training transfer augmentation",
+      "description": ""
+    },
+    {
+      "page_number": 33,
+      "element_type": "paragraph",
+      "text": "Model refinement\nGenerated data TRL: 3\nWhen training data is limited, data\naugmentation may not be sufficient to\neffectively train machine learning models.\nIn particular, data augmentation often\ncannot generate the variation required\nto represent the full task distribution and\ntherefore cause overfitting of the model.\nGenerating similar data can increase the\nvariation in the training data to ensure\nmore of the task distribution can be\nrepresented.\nSimulated data – Simulating data in\nartificial environments, such as game\nengines, can be an effective way to\ngenerate more data for training. For\nsimulated imagery, game engines such as\nUnity and Unreal can be used to generate A GAN generated face.\nrealistic imagery.\nGenerative neural networks – Generative There are also non-GAN approaches to\nAdversarial Networks (GANs) have become data generation for limited data problems,\nan effective way to generate data based such as the Delta-Encoder (Schwartz et al.\noff existing datasets. GANs are trained 2018), which learns to apply translations\nadversarially to generate more realistic data in populous classes and apply these\nand, depending on structure, can be seeded translations to under-represented classes.\nby existing examples or random noise to\ngenerate new data. There are many variants\nof GANs which have been developed for\ndifferent applications, many of these have\ncode available on GitHub. Generative\nneural network approaches require a large\namount of training data, but there have\nbeen some GAN approaches developed\nfor data generation when data is limited,\nsuch as DAGAN (Antoniou et al. 2017).\n030 Machine Learning with Limited Data\n0.4\nAS-YB\nCC\nrednu\ndesnecil\n/ 1cibaraecneicsataD",
+      "bounding_box": [
+        0.0,
+        0.0,
+        420.945,
+        595.276
+      ],
+      "extraction_method": "pdfplumber_page",
+      "needs_review": true,
+      "element_id": "page_33_element_1"
+    },
+    {
+      "element_id": "page_33_element_2",
+      "page_number": 33,
+      "element_type": "image",
+      "text": "Image on PDF page 33; see the saved visual crop.",
+      "bounding_box": [
+        216.5284029,
+        107.71694839999998,
+        382.3069124,
+        287.65743169999996
+      ],
+      "extraction_method": "pdfplumber_render+embedded_text_or_ocr",
+      "needs_review": true,
+      "visual_path": "visuals/page_33_image_01_217_108_382_288.png",
+      "ocr_text": "",
+      "description": ""
+    },
+    {
+      "page_number": 34,
+      "element_type": "paragraph",
+      "text": "Technology readiness levels",
+      "bounding_box": [
+        53.8583,
+        57.84809999999993,
+        209.97229999999993,
+        103.84809999999993
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_34_element_1"
+    },
+    {
+      "page_number": 34,
+      "element_type": "table",
+      "text": "| TRL | Description |\n| --- | --- |\n| TRL 1 | Basic principles observed and reported. |\n| TRL 2 | Technology concept and/or application formulated. |\n| TRL 3 | Analytical and experimental critical function and/or characteristic proof-of-concept. |\n| TRL 4 | Technology component and/or basic technology subsystem validation in a laboratory environment. |\n| TRL 5 | Technology component and/or basic technology subsystem validation in a relevant environment. |\n| TRL 6 | Technology system/subsystem model or prototype demonstration in a relevant environment. |\n| TRL 7 | Technology system prototype demonstration in an operational environment. |\n| TRL 8 | Actual Technology system completed and qualified through test and demonstration. |\n| TRL 9 | Actual Technology system qualified through successful mission operations. |",
+      "bounding_box": [
+        39.775909090909096,
+        127.55899999999997,
+        381.00989999999996,
+        467.71695
+      ],
+      "extraction_method": "pdfplumber_table",
+      "needs_review": false,
+      "table_number": 1,
+      "row_count": 10,
+      "column_count": 2,
+      "element_id": "page_34_element_3"
+    },
+    {
+      "page_number": 34,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 031",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        385.43089999999995,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_34_element_2"
+    },
+    {
+      "page_number": 35,
+      "element_type": "heading",
+      "text": "References",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        130.39059999999998,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_35_element_1"
+    },
+    {
+      "page_number": 35,
+      "element_type": "paragraph",
+      "text": "• Akkaya, Ilge, et al. “Solving Rubik’s Cube with a Robot Hand.” arXiv preprint arXiv:1910.07113 (2019).\n\n• Antoniou, Antreas, Amos Storkey, and Harrison Edwards. “Data augmentation generative adversarial networks.” arXiv preprint arXiv:1711.04340 (2017).\n\n• Arandjelovic, Relja, and Andrew Zisserman. “Objects that sound.” Proceedings of the European Conference on Computer Vision (ECCV). 2018.\n\n• Doersch, Carl, Abhinav Gupta, and Alexei A. Efros. “Unsupervised visual representation learning by context prediction.” Proceedings of the IEEE International Conference on Computer Vision. 2015.\n\n• Everingham, Mark, et al. “The pascal visual object classes (voc) challenge.” International journal of computer vision 88.2 (2010): 303-338.\n\n• Finn, Chelsea, Pieter Abbeel, and Sergey Levine. “Model-agnostic meta-learning for fast adaptation of deep networks.” Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017.\n\n• Gal, Yarin, and Zoubin Ghahramani. “Dropout as a bayesian approximation: Representing model uncertainty in deep learning.” International conference on machine learning. 2016.\n\n• Lake, Brenden M., Ruslan Salakhutdinov, and Joshua B. Tenenbaum. “Human-level concept learning through probabilistic program induction.” Science 350.6266 (2015): 1332-1338.\n\n• Lampert, Christoph H., Hannes Nickisch, and Stefan Harmeling. “Learning to detect unseen object classes by between-class attribute transfer.” 2009 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2009.\n\n• LeCun, Yann, et al. “Gradient-based learning applied to document recognition.” Proceedings of the IEEE 86.11 (1998): 2278-2324.\n\n• Li, Xiang, et al. “Fss-1000: A 1000-class dataset for few-shot segmentation.” Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.\n\n• Miller, George A. WordNet: An electronic lexical database. MIT press, 1998.\n\n• Mishra, Nikhil, et al. “A simple neural attentive meta-learner.” arXiv preprint arXiv: 1707.03141 (2017).\n\n• Misra, Ishan, C. Lawrence Zitnick, and Martial Hebert. “Shuffle and learn: unsupervised learning using temporal order verification.” European Conference on Computer Vision. Springer, Cham, 2016.\n\n• Munkhdalai, Tsendsuren, and Hong Yu. “Meta networks.” Proceedings of the 34th International Conference on Machine Learning-Volume 70. JMLR. org, 2017.",
+      "bounding_box": [
+        39.685,
+        108.17104999999992,
+        378.5898500000002,
+        498.9210499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_35_element_2"
+    },
+    {
+      "page_number": 35,
+      "element_type": "paragraph",
+      "text": "032 Machine Learning with Limited Data",
+      "bounding_box": [
+        34.6391,
+        567.8872,
+        177.5491,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_35_element_3"
+    },
+    {
+      "page_number": 36,
+      "element_type": "paragraph",
+      "text": "• Kolesnikov, Alexander, et al. “Big transfer (BiT): General visual representation learning.” arXiv preprint arXiv:1912.11370 (2019).\n\n• Pathak, Deepak, et al. “Context encoders: Feature learning by inpainting.” Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.\n\n• Schwartz, Eli, et al. “Delta-encoder: an effective sample synthesis method for few-shot object recognition.” Advances in Neural Information Processing Systems. 2018.\n\n• Sensoy, Murat, Lance Kaplan, and Melih Kandemir. “Evidential deep learning to quantify classification uncertainty.” Advances in Neural Information Processing Systems. 2018.\n\n• Shorten, Connor, and Taghi M. Khoshgoftaar. “A survey on image data augmentation for deep learning.” Journal of Big Data 6.1 (2019): 60.\n\n• Smith, Linda, and Michael Gasser. “The development of embodied cognition: Six lessons from babies.” Artificial life 11.1-2 (2005): 13-29.\n\n• Snell, Jake, Kevin Swersky, and Richard Zemel. “Prototypical networks for few-shot learning.” Advances in neural information processing systems. 2017.\n\n• SpaceNet on Amazon Web Services (AWS). “Datasets.” The SpaceNet Catalog. Last modified April 30, 2018. Accessed on [August 20, 2020]. https://spacenetchallenge.github.io/datasets/datasetHomePage.html.\n\n• Sung, Flood, et al. “Learning to compare: Relation network for few-shot learning.” Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.\n\n• Tanner, Franklin, et al. “Overhead imagery research data set—An annotated data library & tools to aid in the development of computer vision algorithms.” 2009 IEEE Applied Imagery Pattern Recognition Workshop (AIPR 2009). IEEE, 2009.\n\n• Tian, Pinzhuo, et al. “Differentiable Meta-Learning Model for Few-Shot Semantic Segmentation.” AAAI. 2020.\n\n• Vinyals, Oriol, et al. “Matching networks for one shot learning.” Advances in neural information processing systems. 2016.\n\n• Yosinski, Jason, et al. “How transferable are features in deep neural networks?” Advances in neural information processing systems. 2014.\n\n• Zhang, Richard, Phillip Isola, and Alexei A. Efros. “Colorful image colorization.” European conference on computer vision. Springer, Cham, 2016.\n\n• Lan, Zhenzhong, et al. “Albert: A lite bert for self-supervised learning of language representations.” arXiv preprint arXiv:1909.11942 (2019).\n\n• Xiao, Jianxiong, et al. “Sun database: Large-scale scene recognition from abbey to zoo.” 2010 IEEE computer society conference on computer vision and pattern recognition. IEEE, 2010.",
+      "bounding_box": [
+        39.685,
+        108.17104999999992,
+        381.2598,
+        510.1710499999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_36_element_1"
+    },
+    {
+      "page_number": 36,
+      "element_type": "paragraph",
+      "text": "Machine Learning with Limited Data 033",
+      "bounding_box": [
+        243.3959,
+        567.8872,
+        386.2109,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_36_element_2"
+    },
+    {
+      "page_number": 37,
+      "element_type": "heading",
+      "text": "Further information",
+      "bounding_box": [
+        39.685,
+        57.3590999999999,
+        207.40179999999992,
+        75.3590999999999
+      ],
+      "extraction_method": "pdfplumber_font_and_text",
+      "needs_review": false,
+      "element_id": "page_37_element_1"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "The approaches to learning with limited data presented in this guide are a part of ongoing research carried out by the Future of AI for Defence project at Dstl. For the approaches presented we are carrying out extensive research to understand the current state-of-the-art, develop the theory to benefit Defence and demonstrate how these approaches for learning with limited data could be applied to Defence problems.",
+      "bounding_box": [
+        39.685,
+        107.98084999999998,
+        381.17560000000026,
+        161.23084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_2"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "For further information on these approaches to learning with limited data, contact:",
+      "bounding_box": [
+        39.685,
+        175.48084999999998,
+        348.3414249999999,
+        183.73084999999998
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_3"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "E lowshot_learning@dstl.gov.uk",
+      "bounding_box": [
+        44.14,
+        197.98084999999998,
+        165.5319499999999,
+        206.27209999999997
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_4"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "© Crown copyright (2020), Dstl.",
+      "bounding_box": [
+        39.685,
+        456.2007,
+        141.33339999999998,
+        463.2007
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_5"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "This material is licensed under the terms of the Open Government Licence except where otherwise stated. To view this licence, visit http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3 or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU or email: psi@nationalarchives.gsi.gov.uk",
+      "bounding_box": [
+        39.685,
+        476.2007,
+        319.26080000000013,
+        523.2007
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_6"
+    },
+    {
+      "page_number": 37,
+      "element_type": "paragraph",
+      "text": "034 Machine Learning with Limited Data",
+      "bounding_box": [
+        34.5341,
+        567.8872,
+        177.5491,
+        577.8872
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_37_element_7"
+    },
+    {
+      "page_number": 38,
+      "element_type": "paragraph",
+      "text": "T +44 (0) 1980 950000 E centralenquiries@dstl.gov.uk",
+      "bounding_box": [
+        112.1309,
+        525.7515999999999,
+        209.03334999999998,
+        541.0115999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_38_element_1"
+    },
+    {
+      "page_number": 38,
+      "element_type": "paragraph",
+      "text": "For more information about Dstl’s work, DSTL/PUB126061 visit www.gov.uk/dstl © Crown Copyright 2020",
+      "bounding_box": [
+        112.1309,
+        547.8150999999999,
+        380.43010000000004,
+        563.0750999999999
+      ],
+      "extraction_method": "pdfplumber_words_and_coordinates",
+      "needs_review": false,
+      "element_id": "page_38_element_2"
+    }
+  ]
+}

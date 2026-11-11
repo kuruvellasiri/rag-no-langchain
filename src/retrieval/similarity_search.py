@@ -91,12 +91,16 @@ def cosine_similarity(
 
     return float(score)
 
-from src.vectorstore.chroma_store import get_collection
+from src.vectorstore.chroma_store import (
+    DEFAULT_COLLECTION_NAME,
+    get_collection,
+)
 
 
 def chroma_semantic_search(
     query: str,
-    top_k: int = 3
+    top_k: int = 3,
+    collection_name: str = DEFAULT_COLLECTION_NAME,
 ) -> list[dict]:
 
     if not query or not query.strip():
@@ -109,7 +113,7 @@ def chroma_semantic_search(
     query_vector = generate_query_embedding(query)
 
     # Step 2: Get ChromaDB collection
-    collection = get_collection()
+    collection = get_collection(collection_name)
 
     # Step 3: Search the collection
     results = collection.query(

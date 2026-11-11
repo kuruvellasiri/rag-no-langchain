@@ -118,7 +118,8 @@ def split_text_recursive(
 def create_recursive_chunks(
     documents: list[dict],
     chunk_size: int = 1000,
-    overlap: int = 200
+    overlap: int = 200,
+    chunk_id_prefix: str = "page",
 ) -> list[dict]:
 
     all_chunks = []
@@ -138,17 +139,25 @@ def create_recursive_chunks(
             page_chunks,
             start=1
         ):
+            actual_overlap = 0
+            if chunk_number > 1 and overlap > 0:
+                previous_text = page_chunks[chunk_number - 2]
+                max_check = min(overlap, len(previous_text), len(chunk_text))
+                for size in range(max_check, 0, -1):
+                    if previous_text[-size:] == chunk_text[:size]:
+                        actual_overlap = size
+                        break
 
             all_chunks.append({
                 "chunk_id": (
-                    f"page_{metadata['page']}_chunk_{chunk_number}"
+                    f"{chunk_id_prefix}_{metadata['page']}_chunk_{chunk_number}"
                 ),
                 "page_content": chunk_text,
                 "metadata": {
                     **metadata,
                     "chunk_number": chunk_number,
                     "chunk_size": len(chunk_text),
-                    "overlap": overlap if chunk_number > 1 else 0
+                    "overlap": actual_overlap
                 }
             })
 
